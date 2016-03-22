@@ -3,4 +3,14 @@
     <string name="action_settings">Settings</string>
     <string name="profile_title_logged_in">You are logged in as</string>
     <string name="profile_logout_button_label">Log out</string>
+    <string name="enterUsername">Enter username</string>
+    <string name="enterName">Enter name</string>
+    <string name="enterPassword">Enter password</string>
+    <string name="enterEmail">Enter email</string>
+    <string name="enterPhoneNum">Enter phone number</string>
+    <string name="enterHireDate">Enter hire date</string>
+    <string name="enterBirthDate">Enter birth date</string>
+    <string name="manager">Is manager</string>
+    <string name="generalManager">Is general manager</string>
+    <string name="submit">Submit</string>
 </resources>

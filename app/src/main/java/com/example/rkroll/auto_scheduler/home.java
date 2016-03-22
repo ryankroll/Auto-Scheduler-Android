@@ -1,9 +1,12 @@
 package com.example.rkroll.auto_scheduler;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
@@ -19,6 +22,8 @@ public class home extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+    private Button testButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +37,23 @@ public class home extends AppCompatActivity {
         Toast toast = Toast.makeText(context, user, duration);
         toast.show();
 
+        testButton = (Button) findViewById(R.id.buttonDoesThings);
+        testButton.setOnClickListener(loginListener);
+
+
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
+    private final View.OnClickListener loginListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(home.this, add_employee.class);
+            startActivity(intent);
+        }
+    };
 
-    @Override
     public void onStart() {
         super.onStart();
 
