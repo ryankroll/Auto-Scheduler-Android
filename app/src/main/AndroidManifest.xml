@@ -40,7 +40,11 @@
             android:name="com.parse.CLIENT_KEY"
             android:value="MD9y8cCJqgkdrIuiZCVFDKrwU7Zmg98TfQcm36Sd"/>
 
-        <activity android:name=".home">
+        <activity
+            android:name=".home"
+            android:label="schedule"
+
+            >
         </activity>
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -51,6 +55,38 @@
             android:value="@integer/google_play_services_version"/>
 
         <activity android:name=".add_employee">
+        </activity>
+
+        <activity
+            android:name=".CompanyInformation"
+            android:label="@string/title_activity_company_information"
+            android:parentActivityName=".home"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.home"/>
+        </activity>
+
+        <activity
+            android:name=".EditStoreHours"
+            android:label="@string/title_activity_edit_store_hours"
+            android:parentActivityName=".CompanyInformation"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.CompanyInformation"/>
+        </activity>
+        <activity
+            android:name=".EditCompanyInformation"
+            android:label="@string/title_activity_edit_company_information"
+            android:parentActivityName=".CompanyInformation"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.CompanyInformation"/>
         </activity>
     </application>
 

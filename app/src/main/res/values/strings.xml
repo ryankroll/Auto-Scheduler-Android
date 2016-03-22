@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Auto-Scheduler</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">General Manager</string>
+    <string name="man_settings">Manager</string>
+
     <string name="profile_title_logged_in">You are logged in as</string>
     <string name="profile_logout_button_label">Log out</string>
     <string name="enterUsername">Enter username</string>
@@ -13,4 +15,45 @@
     <string name="manager">Is manager</string>
     <string name="generalManager">Is general manager</string>
     <string name="submit">Submit</string>
+
+    <string name="companyName">Wendy\'s</string>
+    <string name="companyLabel">Company Name: </string>
+    <string name="storeID">095</string>
+    <string name="storeIdLabel">Store ID: </string>
+    <string name="sundayHrsText">Sundays Hours:</string>
+    <string name="mondayHrsText">Mondays Hours:</string>
+    <string name="tuesdayHrsText">Tuesdays Hours:</string>
+    <string name="wednesdayHrsText">Wednesdays Hours:</string>
+    <string name="thursdayHrsText">Thursdays Hours:</string>
+    <string name="fridayHrsText">Fridays Hours:</string>
+    <string name="saturdayHrsText">Saturdays Hours:</string>
+    <string name="editStoreHrs">Edit Store Hours</string>
+    <string name="editStoreInfo">Edit Store Name and ID</string>
+    <string name="dash">-</string>
+    <string name="buttonSave">Save</string>
+    <string name="companyNameHint">Enter Company Name</string>
+    <string name="storeIdHint">Enter the store ID</string>
+    <string name="editTime">Edit time:</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="schedule">Weekly Schedule</string>
+
+
+    <string name="sundayOpen">0000</string>
+    <string name="sundayClose">2359</string>
+    <string name="mondayOpen">0000</string>
+    <string name="mondayClose">2359</string>
+    <string name="tuesdayOpen">0000</string>
+    <string name="tuesdayClose">2359</string>
+    <string name="wednesdayOpen">0000</string>
+    <string name="wednesdayClose">2359</string>
+    <string name="thursdayOpen">0000</string>
+    <string name="thursdayClose">2359</string>
+    <string name="fridayOpen">0000</string>
+    <string name="fridayClose">2359</string>
+    <string name="saturdayOpen">0000</string>
+    <string name="saturdayClose">2359</string>
+    <string name="title_activity_company_information">Company Information</string>
+    <string name="title_activity_edit_store_hours">Edit Store Hours</string>
+    <string name="title_activity_edit_company_information">Edit Company Information</string>
 </resources>

@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -30,6 +33,7 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+
         ParseUser currentUser = ParseUser.getCurrentUser();
         String user = currentUser.getString("name");
         Context context = getApplicationContext();
@@ -44,6 +48,45 @@ public class home extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //If general manager button is pressed from menu attempt to access general manager settings
+        if (id == R.id.action_settings) {
+
+            //NEED TO DO CHECK HERE TO MAKE SURE USER IS GENERAL MANAGER
+
+
+            Intent intent = new Intent(this, CompanyInformation.class);
+            startActivity(intent);
+            return true;
+        }
+
+        //  USE FOR LATER WHEN MANAGER SETTINGS HAVE BEEN CREATED
+        // if manager settings button is pressed from menu attempt to access manager activities
+        if (id == R.id.man_settings){
+
+            //NEED TO DO CHECK HERE TO MAKE SURE USER IS A MANAGER
+
+//            Intent intent = new Intent(this, ManagerSettings.class);
+//            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private final View.OnClickListener loginListener = new View.OnClickListener() {

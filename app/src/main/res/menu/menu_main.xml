@@ -1,10 +1,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context="com.example.rkroll.auto_scheduler.MainActivity">
+      tools:context="com.example.rkroll.auto_scheduler.home">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/man_settings"
+        android:orderInCategory="100"
+        android:title="@string/man_settings"
         app:showAsAction="never"/>
 </menu>
