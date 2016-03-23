@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.brian.companyclass.CompanyInformation"
+    tools:showIn="@layout/activity_company_information"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/smallTopSpace"
+                    android:text="@string/companyLabel"
+                    android:textSize="@dimen/largeText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/smallTopSpace"
+                    android:text="@string/companyName"
+                    android:textSize="@dimen/largeText"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/topSpace"
+                    android:text="@string/storeIdLabel"
+                    android:textSize="@dimen/mediumText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/topSpace"
+                    android:text="@string/storeID"
+                    android:textSize="@dimen/mediumText"
+                    android:layout_marginEnd="@dimen/largeSpacebar"
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editStoreInfo"
+                android:id="@+id/editStoreButton"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                android:onClick="editInfo"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/smallTopSpace"
+                    android:text="@string/sundayHrsText"
+                    android:textSize="@dimen/normalText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/sundayOpen"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/dash"
+                    android:textSize="@dimen/normalText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/sundayClose"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/mondayHrsText"
+                    android:textSize="@dimen/normalText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="@dimen/smallTopSpace"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/mondayOpen"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/dash"
+                    android:textSize="@dimen/normalText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/mondayClose"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/tuesdayHrsText"
+                    android:textSize="@dimen/normalText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="@dimen/smallTopSpace"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/tuesdayOpen"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/dash"
+                    android:textSize="@dimen/normalText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/tuesdayClose"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/wednesdayHrsText"
+                    android:textSize="@dimen/normalText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="@dimen/smallTopSpace"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/wednesdayOpen"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/dash"
+                    android:textSize="@dimen/normalText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/wednesdayClose"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/thursdayHrsText"
+                    android:textSize="@dimen/normalText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="@dimen/smallTopSpace"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/thursdayOpen"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/dash"
+                    android:textSize="@dimen/normalText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/thursdayClose"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/fridayHrsText"
+                    android:textSize="@dimen/normalText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="@dimen/smallTopSpace"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/fridayOpen"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/dash"
+                    android:textSize="@dimen/normalText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/fridayClose"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/saturdayHrsText"
+                    android:textSize="@dimen/normalText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="@dimen/smallTopSpace"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/saturdayOpen"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/dash"
+                    android:textSize="@dimen/normalText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="9dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/normalText"
+                    android:text="@string/saturdayClose"
+                    android:layout_gravity="bottom"
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editStoreHrs"
+                android:id="@+id/editHrsButton"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/topSpace"
+                android:onClick="changeStoreHrs"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

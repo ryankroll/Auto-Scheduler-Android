@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.brian.companyclass.EditStoreHours"
+    tools:showIn="@layout/activity_edit_store_hours"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/largeTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="@string/sundayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="bottom"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/sundayOpen"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/sundayClose"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/open"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/sundayOpen"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/close"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/sundayClose"
+            android:background="@color/inputHighlights"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/mondayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="@dimen/smallTopSpace"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/mondayOpen"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/mondayClose"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/open"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/mondayOpen"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/close"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/mondayClose"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/tuesdayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/tuesdayOpen"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/tuesdayClose"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/open"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/tuesdayOpen"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/close"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/tuesdayClose"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/wednesdayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/wednesdayOpen"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/wednesdayClose"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/open"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/wednesdayOpen"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/close"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/wednesdayClose"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/thursdayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/thursdayOpen"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/thursdayClose"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/open"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/thursdayOpen"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/close"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/thursdayClose"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/fridayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/fridayOpen"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/fridayClose"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/open"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/fridayOpen"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/close"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/fridayClose"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/saturdayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/saturdayOpen"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/saturdayClose"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/open"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/saturdayOpen"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/close"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/saturdayClose"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/buttonSave"
+        android:layout_marginTop="@dimen/topSpace"
+        android:layout_gravity="end"
+        android:id="@+id/saveButton"
+
+        />
+</GridLayout>
