@@ -2,6 +2,8 @@
     <string name="app_name">Auto-Scheduler</string>
     <string name="action_settings">General Manager</string>
     <string name="man_settings">Manager</string>
+    <string name="storeInfo">Store Info</string>
+    <string name="addEmployee">Add Employee</string>
 
     <string name="profile_title_logged_in">You are logged in as</string>
     <string name="profile_logout_button_label">Log out</string>
@@ -17,7 +19,7 @@
     <string name="submit">Submit</string>
 
     <string name="companyName">Wendy\'s</string>
-    <string name="companyLabel">Company Name: </string>
+    <string name="companyLabel">Company: </string>
     <string name="storeID">095</string>
     <string name="storeIdLabel">Store ID: </string>
     <string name="sundayHrsText">Sundays Hours:</string>
@@ -56,4 +58,7 @@
     <string name="title_activity_company_information">Company Information</string>
     <string name="title_activity_edit_store_hours">Edit Store Hours</string>
     <string name="title_activity_edit_company_information">Edit Company Information</string>
+    <string name="title_activity_home_screen">Weekly Schedule</string>
+    <string name="title_activity_general_manager">General Manager Options</string>
+    <string name="title_activity_add_emp">New Employee</string>
 </resources>
