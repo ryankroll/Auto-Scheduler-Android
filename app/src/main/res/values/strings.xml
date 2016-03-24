@@ -16,9 +16,7 @@
     <string name="generalManager">Is general manager</string>
     <string name="submit">Submit</string>
 
-    <string name="companyName">Wendy\'s</string>
     <string name="companyLabel">Company Name: </string>
-    <string name="storeID">095</string>
     <string name="storeIdLabel">Store ID: </string>
     <string name="sundayHrsText">Sundays Hours:</string>
     <string name="mondayHrsText">Mondays Hours:</string>

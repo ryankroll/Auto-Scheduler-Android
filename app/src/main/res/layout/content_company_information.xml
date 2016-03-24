@@ -48,9 +48,8 @@
                     android:layout_height="wrap_content"
 
                     android:layout_marginTop="@dimen/smallTopSpace"
-                    android:text="@string/companyName"
                     android:textSize="@dimen/largeText"
-                    />
+                    android:id="@+id/companyName"/>
             </LinearLayout>
 
             <LinearLayout
@@ -75,10 +74,9 @@
                     android:layout_height="wrap_content"
 
                     android:layout_marginTop="@dimen/topSpace"
-                    android:text="@string/storeID"
                     android:textSize="@dimen/mediumText"
                     android:layout_marginEnd="@dimen/largeSpacebar"
-                    />
+                    android:id="@+id/storeId"/>
 
 
             </LinearLayout>
