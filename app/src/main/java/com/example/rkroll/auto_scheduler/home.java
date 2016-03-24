@@ -75,7 +75,6 @@ public class home extends AppCompatActivity {
             return true;
         }
 
-        //  USE FOR LATER WHEN MANAGER SETTINGS HAVE BEEN CREATED
         // if manager settings button is pressed from menu attempt to access manager activities
         if (id == R.id.man_settings){
 

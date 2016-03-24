@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loginSuccessful(){
-        Intent intent = new Intent(this, home.class);
+        Intent intent = new Intent(this, HomeScreen.class);
         startActivity(intent);
     }
 

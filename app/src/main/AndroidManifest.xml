@@ -42,9 +42,7 @@
 
         <activity
             android:name=".home"
-            android:label="schedule"
-
-            >
+            android:label="schedule">
         </activity>
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -56,24 +54,20 @@
 
         <activity android:name=".add_employee">
         </activity>
-
         <activity
             android:name=".CompanyInformation"
             android:label="@string/title_activity_company_information"
-            android:parentActivityName=".home"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+            android:parentActivityName=".GeneralManager"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.home"/>
         </activity>
-
         <activity
             android:name=".EditStoreHours"
             android:label="@string/title_activity_edit_store_hours"
             android:parentActivityName=".CompanyInformation"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.CompanyInformation"/>
@@ -82,11 +76,24 @@
             android:name=".EditCompanyInformation"
             android:label="@string/title_activity_edit_company_information"
             android:parentActivityName=".CompanyInformation"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.CompanyInformation"/>
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".GeneralManager"
+            android:label="@string/title_activity_general_manager"
+            android:parentActivityName=".HomeScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.HomeScreen"/>
         </activity>
     </application>
 
