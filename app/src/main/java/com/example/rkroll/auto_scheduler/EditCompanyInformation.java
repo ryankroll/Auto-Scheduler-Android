@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.parse.FindCallback;
 import com.parse.GetCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
@@ -58,7 +57,7 @@ public class EditCompanyInformation extends AppCompatActivity {
                 if (e == null) {
                     objectRetrievalSuccessful(object);
                 } else {
-                    objectRetrivalFailed();
+                    objectRetreivalFailed();
                 }
             }
 
@@ -93,10 +92,10 @@ public class EditCompanyInformation extends AppCompatActivity {
 
     public void objectRetrievalSuccessful(ParseObject object) {
         currentCompany = object;
-    };
+    }
 
-    public void objectRetrivalFailed() {
+    public void objectRetreivalFailed() {
 
-    };
+    }
 
 }

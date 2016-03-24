@@ -35,9 +35,9 @@ public class CompanyInformation extends AppCompatActivity {
             @Override
             public void done(ParseObject object, ParseException e) {
                 if (e == null) {
-                    objectRetrivalSuccessful(object);
+                    objectRetrievalSuccessful(object);
                 } else {
-                    objectRetrivalFailed();
+                    objectRetrievalFailed();
                 }
             }
 
@@ -56,13 +56,13 @@ public class CompanyInformation extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void objectRetrivalSuccessful(ParseObject object) {
+    public void objectRetrievalSuccessful(ParseObject object) {
         companyName.setText(object.getString("companyName"));
         storeId.setText(String.valueOf(object.getInt("storeID")));
-    };
-    public void objectRetrivalFailed() {
+    }
+    public void objectRetrievalFailed() {
 
-    };
+    }
 
 
 }

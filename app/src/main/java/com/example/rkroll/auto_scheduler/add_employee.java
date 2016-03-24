@@ -12,10 +12,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseUser;
-import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
 
 
@@ -100,7 +97,7 @@ public class add_employee extends AppCompatActivity {
                         if (e == null) {
                             myObjectSavedSuccessfully();
                         } else {
-                            myObjectDidNotSaveSuccesfully();
+                            myObjectDidNotSaveSuccessfully();
                         }
                     }
                 });
@@ -123,7 +120,7 @@ public class add_employee extends AppCompatActivity {
         toast.show();
     }
 
-    public void myObjectDidNotSaveSuccesfully() {
+    public void myObjectDidNotSaveSuccessfully() {
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_LONG;
         CharSequence text = "User was not saved";

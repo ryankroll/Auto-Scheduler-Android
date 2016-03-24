@@ -21,7 +21,7 @@ public class User {
     private boolean isFullTime;
 
     public User(){
-        // Defualt constructor
+        // Default constructor
     }
 
     public void setUsername(String user) {
