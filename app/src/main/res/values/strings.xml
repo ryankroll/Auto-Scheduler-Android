@@ -4,6 +4,7 @@
     <string name="man_settings">Manager</string>
     <string name="storeInfo">Store Info</string>
     <string name="addEmployee">Add Employee</string>
+    <string name="promoteDeleteTitle">Do you want to promote or delete an employee?</string>
 
     <string name="profile_title_logged_in">You are logged in as</string>
     <string name="profile_logout_button_label">Log out</string>
@@ -17,6 +18,7 @@
     <string name="manager">Is manager</string>
     <string name="generalManager">Is general manager</string>
     <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
 
     <string name="companyLabel">Company: </string>
     <string name="storeIdLabel">Store ID: </string>
@@ -37,6 +39,7 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="schedule">Weekly Schedule</string>
+    <string name="current_employees">Current Employees</string>
 
 
     <string name="sundayOpen">0000</string>

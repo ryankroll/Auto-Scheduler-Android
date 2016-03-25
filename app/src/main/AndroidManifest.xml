@@ -58,7 +58,8 @@
             android:name=".CompanyInformation"
             android:label="@string/title_activity_company_information"
             android:parentActivityName=".GeneralManager"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.home"/>
@@ -67,7 +68,8 @@
             android:name=".EditStoreHours"
             android:label="@string/title_activity_edit_store_hours"
             android:parentActivityName=".CompanyInformation"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.CompanyInformation"/>
@@ -76,12 +78,13 @@
             android:name=".EditCompanyInformation"
             android:label="@string/title_activity_edit_company_information"
             android:parentActivityName=".CompanyInformation"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.CompanyInformation"/>
         </activity>
-        <activity
+         <activity
             android:name=".HomeScreen"
             android:label="@string/title_activity_home_screen"
             android:theme="@style/AppTheme.NoActionBar">
