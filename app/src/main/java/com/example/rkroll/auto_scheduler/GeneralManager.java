@@ -198,16 +198,17 @@ public class GeneralManager extends AppCompatActivity {
                             getString(R.string.promoteDeleteTitle, tag));
 
                     // set list of items to display and create event handler
-                    builder.setItems(R.array.employeeName,
+                    builder.setItems(R.array.changeEmployeeStatus,
                             new DialogInterface.OnClickListener() {
+
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     switch (which) {
                                         case 0: // Promote Employee
-//                                            promoteEmployee(tag);
+                                            promoteEmployee(tag);
                                             break;
                                         case 1: // delete
-//                                            deleteEmployee(tag);
+                                            deleteEmployee(tag);
                                             break;
                                     }
                                 }
@@ -221,4 +222,43 @@ public class GeneralManager extends AppCompatActivity {
                     return true;
                 }
             };
+
+    private void promoteEmployee(String emp){
+        // create a new AlertDialog
+        AlertDialog.Builder builder =
+                new AlertDialog.Builder(GeneralManager.this);
+
+        // set the AlertDialog's title
+        builder.setTitle(
+                getString(R.string.promoteToTitle, emp));
+
+        // set list of items to display and create event handler
+        builder.setItems(R.array.promotionStatus,
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        switch (which) {
+                            case 0: // Changing employee status to full-time
+
+                                break;
+                            case 1: // Changing employee status to a manager
+
+                                break;
+                            case 2: // Changing employee status to a general manager
+
+                                break;
+                        }
+                    }
+                }
+        );
+
+        // set the AlertDialog's negative Button
+        builder.setNegativeButton(getString(R.string.cancel), null);
+
+        builder.create().show(); // display the AlertDialog
+    }
+
+    private void deleteEmployee(String emp){
+
+    }
 }

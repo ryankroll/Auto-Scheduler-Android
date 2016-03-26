@@ -3,8 +3,9 @@
     <string name="action_settings">General Manager</string>
     <string name="man_settings">Manager</string>
     <string name="storeInfo">Store Info</string>
-    <string name="addEmployee">Add Employee</string>
-    <string name="promoteDeleteTitle">Do you want to promote or delete an employee?</string>
+    <string name="addEmployee">Add New Employee</string>
+    <string name="promoteDeleteTitle">"%s"</string>
+    <string name="promoteToTitle">Promote "%s" to:</string>
 
     <string name="profile_title_logged_in">You are logged in as</string>
     <string name="profile_logout_button_label">Log out</string>
@@ -15,8 +16,8 @@
     <string name="enterPhoneNum">Enter phone number</string>
     <string name="enterHireDate">Enter hire date</string>
     <string name="enterBirthDate">Enter birth date</string>
-    <string name="manager">Is manager</string>
-    <string name="generalManager">Is general manager</string>
+    <string name="isManager">Is manager</string>
+    <string name="isGeneralManager">Is general manager</string>
     <string name="submit">Submit</string>
     <string name="cancel">Cancel</string>
 
@@ -62,4 +63,5 @@
     <string name="title_activity_home_screen">Weekly Schedule</string>
     <string name="title_activity_general_manager">General Manager Options</string>
     <string name="title_activity_add_emp">New Employee</string>
+    <string name="title_activity_manager">Manager Options</string>
 </resources>

@@ -42,8 +42,8 @@ public class add_employee extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_employee);
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         usernameEditText = ((TextInputLayout) findViewById(R.id.username)).getEditText();
         nameEditText = ((TextInputLayout) findViewById(R.id.name)).getEditText();
@@ -53,12 +53,12 @@ public class add_employee extends AppCompatActivity {
         hireDateEditText = ((TextInputLayout) findViewById(R.id.hireDate)).getEditText();
         phoneNumberEditText = ((TextInputLayout) findViewById(R.id.phoneNumber)).getEditText();
         manager = ((CheckBox) findViewById(R.id.Manager));
-        generalManager = ((CheckBox) findViewById(R.id.GeneralManager));
+        generalManager = ((CheckBox) findViewById(R.id.getGeneralManager));
         submit = (Button) findViewById(R.id.submit);
         submit.setOnClickListener(submitListener);
 
 
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private final View.OnClickListener submitListener = new View.OnClickListener() {
@@ -135,7 +135,7 @@ public class add_employee extends AppCompatActivity {
                 if (checked)
                     m = true;
                 break;
-            case R.id.GeneralManager:
+            case R.id.getGeneralManager:
                 if (checked)
                     gm = true;
                 break;

@@ -52,7 +52,15 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>
 
-        <activity android:name=".add_employee">
+        <activity
+            android:name=".add_employee"
+            android:label="@string/addEmployee"
+            android:parentActivityName=".GeneralManager"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.GeneralManager"/>
         </activity>
         <activity
             android:name=".CompanyInformation"
@@ -62,7 +70,7 @@
             android:windowSoftInputMode="stateAlwaysHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.rkroll.auto_scheduler.home"/>
+                android:value="com.example.rkroll.auto_scheduler.GeneralManager"/>
         </activity>
         <activity
             android:name=".EditStoreHours"
@@ -84,7 +92,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.CompanyInformation"/>
         </activity>
-         <activity
+        <activity
             android:name=".HomeScreen"
             android:label="@string/title_activity_home_screen"
             android:theme="@style/AppTheme.NoActionBar">
@@ -92,6 +100,15 @@
         <activity
             android:name=".GeneralManager"
             android:label="@string/title_activity_general_manager"
+            android:parentActivityName=".HomeScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.HomeScreen"/>
+        </activity>
+        <activity
+            android:name=".Manager"
+            android:label="@string/title_activity_manager"
             android:parentActivityName=".HomeScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

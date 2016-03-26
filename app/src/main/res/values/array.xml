@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="employeeName">
-        <item name="promote"/>
-        <item name="delete"/>
+    <string-array name="changeEmployeeStatus">
+        <item>Promote</item>
+        <item>Delete</item>
     </string-array>
 
-
-
+    <string-array name="promotionStatus">
+        <item>Full-Time</item>
+        <item>Manager</item>
+        <item>General Manager</item>
+    </string-array>
 </resources>

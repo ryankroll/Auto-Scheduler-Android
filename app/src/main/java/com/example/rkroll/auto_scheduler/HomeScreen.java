@@ -54,8 +54,8 @@ public class HomeScreen extends AppCompatActivity {
              NEED TO DO CHECK HERE TO MAKE SURE USER IS A MANAGER
              ***************************/
 
-//            Intent intent = new Intent(this, ManagerSettings.class);
-//            startActivity(intent);
+            Intent intent = new Intent(this, Manager.class);
+            startActivity(intent);
             return true;
         }
 
