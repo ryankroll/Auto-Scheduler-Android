@@ -20,6 +20,13 @@
     <string name="isGeneralManager">Is general manager</string>
     <string name="submit">Submit</string>
     <string name="cancel">Cancel</string>
+    <string name="empNameLabel">Name:</string>
+    <string name="empEmailLabel">Email:</string>
+    <string name="empNumberLabel">Phone Number:</string>
+    <string name="empBithdayLabel">DOB:</string>
+    <string name="empHireDateLabel">Hired Date:</string>
+    <string name="empPosStatusLabel">Pos. Held:</string>
+
 
     <string name="companyLabel">Company: </string>
     <string name="storeIdLabel">Store ID: </string>
@@ -64,4 +71,5 @@
     <string name="title_activity_general_manager">General Manager Options</string>
     <string name="title_activity_add_emp">New Employee</string>
     <string name="title_activity_manager">Manager Options</string>
+    <string name="title_activity_view_employee_info">Employee Information</string>
 </resources>

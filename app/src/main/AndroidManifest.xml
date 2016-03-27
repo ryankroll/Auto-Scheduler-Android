@@ -115,6 +115,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.HomeScreen"/>
         </activity>
+        <activity
+            android:name=".ViewEmployeeInfo"
+            android:label="@string/title_activity_view_employee_info"
+            android:parentActivityName=".GeneralManager"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.GeneralManager"/>
+        </activity>
     </application>
 
 </manifest>

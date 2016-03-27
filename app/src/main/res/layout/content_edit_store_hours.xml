@@ -25,7 +25,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-
             android:text="@string/sundayHrsText"
             android:textSize="@dimen/normalText"
             android:textStyle="bold"
@@ -36,6 +35,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/sundayStartTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/sundayOpen"
@@ -56,6 +56,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/sundayCloseTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/sundayClose"
@@ -77,12 +78,12 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/editSundayStartTime"
 
             android:inputType="number"
             android:hint="@string/open"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/sundayOpen"
             android:layout_marginEnd="16dp"
             android:background="@color/inputHighlights"
             />
@@ -100,12 +101,12 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/editSundayEndTime"
 
             android:inputType="number"
             android:hint="@string/close"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/sundayClose"
             android:background="@color/inputHighlights"
             />
 
@@ -132,6 +133,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/mondayStartTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/mondayOpen"
@@ -152,6 +154,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/mondayEndTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/mondayClose"
@@ -178,7 +181,7 @@
             android:hint="@string/open"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/mondayOpen"
+            android:id="@+id/editMondayStartTime"
             android:layout_marginEnd="16dp"
             android:background="@color/inputHighlights"
             />
@@ -201,7 +204,7 @@
             android:hint="@string/close"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/mondayClose"
+            android:id="@+id/editMondayEndTime"
             android:background="@color/inputHighlights"
             />
     </LinearLayout>
@@ -225,6 +228,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/tuesdayStartTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/tuesdayOpen"
@@ -245,6 +249,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/tuesdayEndTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/tuesdayClose"
@@ -271,7 +276,7 @@
             android:hint="@string/open"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/tuesdayOpen"
+            android:id="@+id/editTuesdayStartTime"
             android:layout_marginEnd="16dp"
             android:background="@color/inputHighlights"
             />
@@ -294,7 +299,7 @@
             android:hint="@string/close"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/tuesdayClose"
+            android:id="@+id/editTuesdayEndTime"
             android:background="@color/inputHighlights"
             />
     </LinearLayout>
@@ -308,6 +313,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/wednesdayStartTime"
 
             android:text="@string/wednesdayHrsText"
             android:textSize="@dimen/normalText"
@@ -329,6 +335,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/wednesdayEndTime"
 
             android:text="@string/dash"
             android:textSize="@dimen/normalText"
@@ -365,7 +372,7 @@
             android:hint="@string/open"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/wednesdayOpen"
+            android:id="@+id/editWednesdayStartTime"
             android:layout_marginEnd="16dp"
             android:background="@color/inputHighlights"
             />
@@ -388,7 +395,7 @@
             android:hint="@string/close"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/wednesdayClose"
+            android:id="@+id/editWednesdayEndTime"
             android:background="@color/inputHighlights"
             />
     </LinearLayout>
@@ -413,6 +420,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/thursdayStartTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/thursdayOpen"
@@ -433,6 +441,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/thursdayEndTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/thursdayClose"
@@ -459,7 +468,7 @@
             android:hint="@string/open"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/thursdayOpen"
+            android:id="@+id/editThursdayStartTime"
             android:layout_marginEnd="16dp"
             android:background="@color/inputHighlights"
             />
@@ -482,7 +491,7 @@
             android:hint="@string/close"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/thursdayClose"
+            android:id="@+id/editThursdayEndTime"
             android:background="@color/inputHighlights"
             />
     </LinearLayout>
@@ -507,6 +516,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/fridayStartTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/fridayOpen"
@@ -527,6 +537,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/fridayEndTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/fridayClose"
@@ -553,7 +564,7 @@
             android:hint="@string/open"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/fridayOpen"
+            android:id="@+id/editFridayStartTime"
             android:layout_marginEnd="16dp"
             android:background="@color/inputHighlights"
             />
@@ -576,7 +587,7 @@
             android:hint="@string/close"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/fridayClose"
+            android:id="@+id/editFridayEndTime"
             android:background="@color/inputHighlights"
             />
     </LinearLayout>
@@ -601,6 +612,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/saturdayStartTime"
 
             android:textSize="@dimen/normalText"
             android:text="@string/saturdayOpen"
@@ -611,6 +623,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/saturdayEndTime"
 
             android:text="@string/dash"
             android:textSize="@dimen/normalText"
@@ -647,7 +660,7 @@
             android:hint="@string/open"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/saturdayOpen"
+            android:id="@+id/editSaturdayStartTime"
             android:layout_marginEnd="16dp"
             android:background="@color/inputHighlights"
             />
@@ -670,7 +683,7 @@
             android:hint="@string/close"
             android:textSize="@dimen/normalText"
             android:layout_gravity="bottom"
-            android:id="@+id/saturdayClose"
+            android:id="@+id/editSaturdayEndTime"
             android:background="@color/inputHighlights"
             />
     </LinearLayout>

@@ -167,16 +167,18 @@ public class GeneralManager extends AppCompatActivity {
     }
 
 
-    // itemClickListener launches web browser to display search results
+    // itemClickListener launches employee info activity for General Manager
     private final View.OnClickListener itemClickListener =
             new View.OnClickListener() {
+
+
                 @Override
                 public void onClick(View view) {
 
                     // create an Intent to launch new activity to view specific employee
-//                    Intent intent = new Intent(this, employeeView.class);
+//                    Intent intent = new Intent(this, ViewEmployeeInfo.class);
 //
-//                    startActivity(intent); // show employee information
+//                    startActivity(intent); // Go to Employee info screen
                 }
             };
 
