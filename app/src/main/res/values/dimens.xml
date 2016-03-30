@@ -9,7 +9,7 @@
 
     <dimen name="topSpace">10dp</dimen>
     <dimen name="smallTopSpace">1dp</dimen>
-    <dimen name="largeTopSpace">10dp</dimen>
+    <dimen name="largeTopSpace">30dp</dimen>
     <dimen name="largeSpacebar">30dp</dimen>
 
     <dimen name="normalText">16sp</dimen>

@@ -26,6 +26,8 @@
     <string name="empBithdayLabel">DOB:</string>
     <string name="empHireDateLabel">Hired Date:</string>
     <string name="empPosStatusLabel">Pos. Held:</string>
+    <string name="requests">Time Off Request</string>
+    <string name="availability">Availabilty Change Request</string>
 
 
     <string name="companyLabel">Company: </string>
