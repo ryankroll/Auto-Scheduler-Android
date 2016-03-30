@@ -25,6 +25,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 
 public class GeneralManager extends AppCompatActivity {
@@ -71,23 +72,6 @@ public class GeneralManager extends AppCompatActivity {
                 currentEmployees, itemClickListener, itemLongClickListener);
         recyclerView.setAdapter(adapter);
 
-//        ListView ls = getListView();
-
-//        String[] employees = {"brian", "ryan", "troy"};
-//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, employees);
-//        getListView().setAdapter(adapter);
-
-
-//        ls.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-//            @Override
-//            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-//
-//
-//
-//                return false;
-//            }
-//        });
-
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -119,6 +103,12 @@ public class GeneralManager extends AppCompatActivity {
         // if manager settings button is pressed from menu attempt to access add employee screen
         if (id == R.id.addEmployee) {
             Intent intent = new Intent(this, add_employee.class);
+            startActivity(intent);
+            return true;
+        }
+
+        if (id == R.id.approvalDecisionsGM){
+            Intent intent = new Intent(this, ViewManagerRequests.class);
             startActivity(intent);
             return true;
         }

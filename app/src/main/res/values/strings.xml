@@ -72,4 +72,7 @@
     <string name="title_activity_add_emp">New Employee</string>
     <string name="title_activity_manager">Manager Options</string>
     <string name="title_activity_view_employee_info">Employee Information</string>
+
+    <string name="approvalTitle">Approve/Deny Requests</string>
+    <string name="title_activity_view_manager_requests">View Manager Requests</string>
 </resources>

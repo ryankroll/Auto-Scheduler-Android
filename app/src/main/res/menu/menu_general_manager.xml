@@ -11,6 +11,12 @@
         app:showAsAction="never"/>
 
     <item
+        android:id="@+id/approvalDecisionsGM"
+        android:orderInCategory="100"
+        android:title="@string/approvalTitle"
+        app:showAsAction="never"/>
+
+    <item
         android:id="@+id/addEmployee"
         android:orderInCategory="100"
         android:title="@string/addEmployee"
