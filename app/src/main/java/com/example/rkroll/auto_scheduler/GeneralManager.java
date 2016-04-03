@@ -3,45 +3,47 @@ package com.example.rkroll.auto_scheduler;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.app.ListActivity;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 
 public class GeneralManager extends AppCompatActivity {
 
     private static final String EMPLOYEES = "Employees";
+    private String LIST_STATE_KEY;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
 
-    private List<String> currentEmployees;  // List of employees for viewing
-
-
+    private List<ParseUser> currentEmployees;  // List of employees for viewing
     private EmployeeAdapter adapter;
-
+    private RecyclerView rv;
+    LinearLayoutManager llm = new LinearLayoutManager(this);
+    private UserReaderDbHelper userDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,27 +52,18 @@ public class GeneralManager extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
-        currentEmployees = new ArrayList<String>();
-        currentEmployees.add("ryan");
-        currentEmployees.add("brian");
-        currentEmployees.add("troy");
-
-        Collections.sort(currentEmployees, String.CASE_INSENSITIVE_ORDER);
-
         // get reference to the RecyclerView to configure it
-        RecyclerView recyclerView =
-                (RecyclerView) findViewById(R.id.recyclerView);
+        rv=(RecyclerView)findViewById(R.id.employeeRecyclerView);
 
         // use a LinearLayoutManager to display items in a vertical list
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        rv.setLayoutManager(llm);
+
+        userDb = new UserReaderDbHelper(this);
 
 
-        // create RecyclerView.Adapter to bind tags to the RecyclerView
-        adapter = new EmployeeAdapter(
-                currentEmployees, itemClickListener, itemLongClickListener);
-        recyclerView.setAdapter(adapter);
+        //Initialize the user array and adapter.
+        initializeData();
+        //initializeAdapter();
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -135,6 +128,33 @@ public class GeneralManager extends AppCompatActivity {
         );
         AppIndex.AppIndexApi.start(client, viewAction);
     }
+/*
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mListState != null) {
+           llm.onRestoreInstanceState(mListState);
+        }
+        Log.d("Called on resume", "");
+    }
+
+    protected void onSaveInstanceState(Bundle state) {
+        super.onSaveInstanceState(state);
+        mListState = llm.onSaveInstanceState();
+        state.putParcelable(LIST_STATE_KEY, mListState);
+        Log.d("Called", "On Save State");
+
+    }
+
+    protected void onRestoreInstanceState(Bundle state) {
+        super.onRestoreInstanceState(state);
+
+        if (state != null) {
+            mListState = state.getParcelable("LIST_STATE_KEY");
+        }
+        Log.d("Called", "On Restore State");
+    }
+    */
 
     @Override
     public void onStop() {
@@ -242,6 +262,7 @@ public class GeneralManager extends AppCompatActivity {
                         }
                     }
                 }
+
         );
 
         // set the AlertDialog's negative Button
@@ -251,6 +272,35 @@ public class GeneralManager extends AppCompatActivity {
     }
 
     private void deleteEmployee(String emp){
+        adapter.notifyDataSetChanged();
+    }
 
+    private void initializeData() {
+        Log.d("used", "intializeData");
+        currentEmployees = new ArrayList<>();
+        ParseQuery<ParseUser> query = ParseUser.getQuery();
+        query.findInBackground(new FindCallback<ParseUser>() {
+            @Override
+            public void done(List<ParseUser> objects, ParseException e) {
+                if(objects != null) {
+                    currentEmployees.clear();
+                    for (int i = 0; i < objects.size(); i++) {
+                        currentEmployees.add(objects.get(i));
+                        userDb.insertUser(currentEmployees.get(i).getString("name"),
+                                currentEmployees.get(i).getObjectId());
+                        Log.d("Database Operations", "Row Inserted into DB...");
+                    }
+                }
+            }
+        });
+
+        //Log.d("User", userDb.getUser("Ryan Kroll").toString());
+    }
+
+    private void initializeAdapter() {
+        // create RecyclerView.Adapter to bind tags to the RecyclerView
+        adapter = new EmployeeAdapter(
+                userDb, itemLongClickListener);
+        rv.setAdapter(adapter);
     }
 }
