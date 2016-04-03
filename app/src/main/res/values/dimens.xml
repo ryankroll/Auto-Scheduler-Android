@@ -11,8 +11,10 @@
     <dimen name="smallTopSpace">1dp</dimen>
     <dimen name="largeTopSpace">30dp</dimen>
     <dimen name="largeSpacebar">30dp</dimen>
+    <dimen name="xlSpace">40dp</dimen>
 
     <dimen name="normalText">16sp</dimen>
     <dimen name="mediumText">20sp</dimen>
+    <dimen name="medLargText">25sp</dimen>
     <dimen name="largeText">30sp</dimen>
 </resources>

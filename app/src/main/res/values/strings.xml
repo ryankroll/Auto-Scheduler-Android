@@ -49,6 +49,7 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="schedule">Weekly Schedule</string>
+    <string name="userSchedule">User Schedule</string>
     <string name="current_employees">Current Employees</string>
 
 

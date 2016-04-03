@@ -16,7 +16,7 @@ public class Manager extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // CODE
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
