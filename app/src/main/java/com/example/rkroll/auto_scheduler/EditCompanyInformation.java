@@ -50,7 +50,7 @@ public class EditCompanyInformation extends AppCompatActivity {
         storeIdTextView.setText(storeId);
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Store");
-        query.whereEqualTo("companyName", "Wendy's");
+        query.whereEqualTo("companyName", "EXTRA_COMPANY_NAME");
         query.getFirstInBackground(new GetCallback<ParseObject>() {
             @Override
             public void done(ParseObject object, ParseException e) {

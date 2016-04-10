@@ -43,7 +43,7 @@ public class GeneralManager extends AppCompatActivity {
     private EmployeeAdapter adapter;
     private RecyclerView rv;
     LinearLayoutManager llm = new LinearLayoutManager(this);
-    private UserReaderDbHelper userDb;
+    //private UserReaderDbHelper userDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,14 +56,15 @@ public class GeneralManager extends AppCompatActivity {
         rv=(RecyclerView)findViewById(R.id.employeeRecyclerView);
 
         // use a LinearLayoutManager to display items in a vertical list
+        LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
 
-        userDb = new UserReaderDbHelper(this);
+        //userDb = new UserReaderDbHelper(this);
 
 
         //Initialize the user array and adapter.
         initializeData();
-        //initializeAdapter();
+        initializeAdapter();
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -108,6 +109,8 @@ public class GeneralManager extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
     @Override
     public void onStart() {
@@ -282,13 +285,15 @@ public class GeneralManager extends AppCompatActivity {
         query.findInBackground(new FindCallback<ParseUser>() {
             @Override
             public void done(List<ParseUser> objects, ParseException e) {
-                if(objects != null) {
-                    currentEmployees.clear();
+                if (objects != null) {
+                    //currentEmployees.clear();
                     for (int i = 0; i < objects.size(); i++) {
                         currentEmployees.add(objects.get(i));
-                        userDb.insertUser(currentEmployees.get(i).getString("name"),
+                        //userDb.insertUser("ryan", "test Id");
+                        /*userDb.insertUser(currentEmployees.get(i).getString("name"),
                                 currentEmployees.get(i).getObjectId());
                         Log.d("Database Operations", "Row Inserted into DB...");
+                    */
                     }
                 }
             }
@@ -300,7 +305,9 @@ public class GeneralManager extends AppCompatActivity {
     private void initializeAdapter() {
         // create RecyclerView.Adapter to bind tags to the RecyclerView
         adapter = new EmployeeAdapter(
-                userDb, itemLongClickListener);
+                currentEmployees, itemLongClickListener);
         rv.setAdapter(adapter);
     }
+
+
 }

@@ -12,13 +12,16 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.parse.LogInCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseSession;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
 
+import com.example.rkroll.auto_scheduler.SimpleDateFormatStringToDate;
 
-
-import java.text.ParsePosition;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class add_employee extends AppCompatActivity {
@@ -33,9 +36,19 @@ public class add_employee extends AppCompatActivity {
     private CheckBox manager;
     private CheckBox generalManager;
     private Button submit;
-    private String aFormat = "yyyy-MM-dd";
     private boolean m;
     private boolean gm;
+    private static int defaultStartAvailability = 0;
+    private static int defaultEndAvailability = 2359;
+
+    private Date date;
+
+    private String[] DATEFORMATS = {"MM-dd-yyyy", "MM/dd/yyyy", "MMddyyyy"};
+
+    SimpleDateFormatStringToDate mDate = new SimpleDateFormatStringToDate();
+
+    private String userSession;
+    ParseUser currentUser = new ParseUser();
 
 
     @Override
@@ -45,72 +58,132 @@ public class add_employee extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        usernameEditText = ((TextInputLayout) findViewById(R.id.username)).getEditText();
-        nameEditText = ((TextInputLayout) findViewById(R.id.name)).getEditText();
-        passwordEditText = ((TextInputLayout) findViewById(R.id.password)).getEditText();
-        emailEditText = ((TextInputLayout) findViewById(R.id.email)).getEditText();
-        birthDateEditText = ((TextInputLayout) findViewById(R.id.birthDate)).getEditText();
-        hireDateEditText = ((TextInputLayout) findViewById(R.id.hireDate)).getEditText();
-        phoneNumberEditText = ((TextInputLayout) findViewById(R.id.phoneNumber)).getEditText();
+        usernameEditText = ((EditText) findViewById(R.id.usernameEditText));
+        nameEditText = ((EditText) findViewById(R.id.nameEditText));
+        passwordEditText = ((EditText) findViewById(R.id.passwordEditText));
+        emailEditText = ((EditText) findViewById(R.id.emailEditText));
+        birthDateEditText = ((EditText) findViewById(R.id.birthDateEditText));
+        hireDateEditText = ((EditText) findViewById(R.id.hireDateEditText));
+        phoneNumberEditText = ((EditText) findViewById(R.id.phoneNumberEditText));
         manager = ((CheckBox) findViewById(R.id.Manager));
         generalManager = ((CheckBox) findViewById(R.id.getGeneralManager));
         submit = (Button) findViewById(R.id.submit);
         submit.setOnClickListener(submitListener);
 
+        userSession = currentUser.getSessionToken();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     private final View.OnClickListener submitListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            String username = usernameEditText.getText().toString();
-            String password = passwordEditText.getText().toString();
-            String name = nameEditText.getText().toString();
-            String email = emailEditText.getText().toString();
-            String hDate = hireDateEditText.getText().toString();
-            Date hireDate = stringToDate(hDate, aFormat);
-            String bDate = birthDateEditText.getText().toString();
-            Date birthDate = stringToDate(bDate, aFormat);
-            double phoneNumber = Double.parseDouble(phoneNumberEditText.getText().toString());
-
             ParseUser user = new ParseUser();
 
-            user.setUsername(username);
-            user.setPassword(password);
-            user.put("name", name);
-            user.setEmail(email);
-            user.put("hireDate", hireDate);
-            user.put("birthDate", birthDate);
-            user.put("phoneNumber", phoneNumber);
-            user.put("isManager", m);
-            user.put("isGeneralManager", gm);
-
-            if (username.isEmpty() | password.isEmpty() | name.isEmpty() | email.isEmpty() | hDate
-                    .isEmpty() | bDate.isEmpty() | phoneNumber == 0) {
-                // Add toast dialog to make sure user inputs all fields
-                System.out.println("Please fill out all fields");
+            String username = usernameEditText.getText().toString();
+            if (username.isEmpty()) {
+                fillOutField();
             } else {
+                user.setUsername(username);
+            }
+            String password = passwordEditText.getText().toString();
+            if(password.isEmpty()) {
+                fillOutField();
+            } else {
+                user.setPassword(password);
+            }
+            String name = nameEditText.getText().toString();
+            if (name.isEmpty()) {
+                fillOutField();
+            } else {
+                user.put("name", name);
+            }
+            String email = emailEditText.getText().toString();
+            if (email.isEmpty()) {
+                fillOutField();
+            } else {
+                user.setEmail(email);
+            }
+            String hDate = hireDateEditText.getText().toString();
+            if (hDate.isEmpty()) {
+                fillOutField();
+            } else {
+                date = mDate.parseDate(hDate, DATEFORMATS);
+                user.put("hireDate", date);
+            }
+            String bDate = birthDateEditText.getText().toString();
+            if (bDate.isEmpty()) {
+                fillOutField();
+            } else {
+                date = mDate.parseDate(bDate, DATEFORMATS);
+                user.put("birthDate", date);
+            }
+            double phoneNumber = Double.parseDouble(phoneNumberEditText.getText().toString());
+            if (phoneNumber == 0) {
+                fillOutField();
+            } else {
+                user.put("phoneNumber", phoneNumber);
+            }
+            if (m && gm)
+            {
+                toast toast = new toast();
+                toast.displayLongToast(getApplicationContext(), "Please only select manager or " +
+                        "general manager");
+            } else if (m){
+                user.put("isManager", m);
                 user.signUpInBackground(new SignUpCallback() {
                     @Override
                     public void done(com.parse.ParseException e) {
                         if (e == null) {
                             myObjectSavedSuccessfully();
                         } else {
-                            myObjectDidNotSaveSuccessfully();
+                            Log.d("User failed to save", e.getMessage());
+                        }
+                    }
+                });
+            } else if (gm) {
+                user.put("isGeneralManager", gm);
+                user.signUpInBackground(new SignUpCallback() {
+                    @Override
+                    public void done(com.parse.ParseException e) {
+                        if (e == null) {
+                            myObjectSavedSuccessfully();
+                        } else {
+                            Log.d("User failed to save", e.getMessage());
+                        }
+                    }
+                });
+            } else {
+                Log.d("User", "Not manager or GM");
+                user.signUpInBackground(new SignUpCallback() {
+                    @Override
+                    public void done(com.parse.ParseException e) {
+                        if (e == null) {
+                            myObjectSavedSuccessfully();
+                        } else {
+                            Log.d("User failed to save", e.getMessage());
                         }
                     }
                 });
             }
-        }
-    };
 
-    public Date stringToDate(String aDate, String aFormat) {
-        ParsePosition pos = new ParsePosition(0);
-        SimpleDateFormat simpledateformat = new SimpleDateFormat(aFormat);
-        Date stringDate = simpledateformat.parse(aDate, pos);
-        return stringDate;
-    }
+            /*Log.d("Session Token", userSession);
+
+            ParseUser.becomeInBackground("userSession", new LogInCallback() {
+                @Override
+                public void done(ParseUser user, ParseException e) {
+                    if (user != null) {
+                        Log.d("User", currentUser.getUsername());
+                    } else {
+                        Log.d("Token", "could not be validated");
+                    }
+                }
+            });*/
+
+            }
+
+    };
 
     public void myObjectSavedSuccessfully() {
         Context context = getApplicationContext();
@@ -118,14 +191,9 @@ public class add_employee extends AppCompatActivity {
         CharSequence text = "User saved successfully";
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-    }
+        //Add open availability for user if object saved successfully
+        setAvailability();
 
-    public void myObjectDidNotSaveSuccessfully() {
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_LONG;
-        CharSequence text = "User was not saved";
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
     }
 
     public void onCheckBoxClicked (View view) {
@@ -134,11 +202,56 @@ public class add_employee extends AppCompatActivity {
             case R.id.Manager:
                 if (checked)
                     m = true;
+                else {
+                    m = false;
+                }
                 break;
             case R.id.getGeneralManager:
                 if (checked)
                     gm = true;
+                else
+                    gm = false;
                 break;
         }
     }
+    public  void setAvailability() {
+        ParseUser currentUser = ParseUser.getCurrentUser();
+        ParseObject a = new ParseObject("Availability");
+        a.put("userId", currentUser.getObjectId());
+        a.put("sundayStartTime", defaultStartAvailability);
+        a.put("sundayEndTime", defaultEndAvailability);
+        a.put("mondayStartTime", defaultStartAvailability);
+        a.put("mondayEndTime", defaultEndAvailability);
+        a.put("tuesdayStartTime", defaultStartAvailability);
+        a.put("tuesdayEndTime", defaultEndAvailability);
+        a.put("wednesdayStartTime", defaultStartAvailability);
+        a.put("wednesdayEndTime", defaultEndAvailability);
+        a.put("wednesdayStartTime", defaultStartAvailability);
+        a.put("wednesdayEndTime", defaultEndAvailability);
+        a.put("thursdayStartTime", defaultStartAvailability);
+        a.put("thursdayEndTime", defaultEndAvailability);
+        a.put("fridayStartTime", defaultStartAvailability);
+        a.put("fridayEndTime", defaultEndAvailability);
+        a.put("saturdayStartTime", defaultStartAvailability);
+        a.put("saturdayEndTime", defaultEndAvailability);
+
+        a.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    Log.d("Availability", "Saved successfully");
+                } else{
+                    Log.d("Failure", e.getMessage());
+                }
+            }
+        });
+
+    }
+
+    public void fillOutField() {
+        toast toast = new toast();
+        toast.displayLongToast(getApplicationContext(), "Please fill out all fields");
+
+    }
+
 }

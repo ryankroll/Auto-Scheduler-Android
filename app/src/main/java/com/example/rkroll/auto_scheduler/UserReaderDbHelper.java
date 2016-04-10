@@ -12,7 +12,7 @@ public class UserReaderDbHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "UserReader.db";
     public static final String USER_TABLE_NAME = "user";
-    public static final String USER_COLUMN_ID = "_id";
+    public static final String USER_COLUMN_ID = "id";
     public static final String USER_COLUMN_NAME ="name";
     public static final String USER_COLUMN_OBJECT_ID = "object_Id";
 
@@ -22,13 +22,18 @@ public class UserReaderDbHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(
-                "CREATE TABLE " + USER_TABLE_NAME + " (" +
-                USER_COLUMN_ID + " INTEGER PRIMARY KEY, " +
-                USER_COLUMN_NAME + " TEXT, " +
-                USER_COLUMN_OBJECT_ID + " TEXT)"
-        );
+
         Log.d("Database operations", "Table Created...");
+
+        /*String CREATE_CONTACTS_TABLE = "CREATE TABLE " + USER_TABLE_NAME + "(" + USER_COLUMN_ID +
+                " INTEGER PRIMARY KEY, " + USER_COLUMN_NAME + " TEXT," + USER_COLUMN_OBJECT_ID +
+                " TEXT" + ")";
+        db.execSQL(CREATE_CONTACTS_TABLE);
+        */
+        db.execSQL("CREATE TABLE USER(" +
+                "id INT PRIMARY KEY NOT NULL, " +
+                "name TEXT, " +
+                "object_Id CHAR(50));");
     }
 
     @Override

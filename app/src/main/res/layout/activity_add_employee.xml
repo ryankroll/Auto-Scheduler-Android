@@ -37,6 +37,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/usernameEditText"
                         android:hint="@string/enterUsername"
                         android:singleLine="true"/>
                 </android.support.design.widget.TextInputLayout>
@@ -48,6 +49,7 @@
                     <EditText
                         android:layout_width="@dimen/input_width"
                         android:layout_height="wrap_content"
+                        android:id="@+id/nameEditText"
                         android:hint="@string/enterName"
                         android:singleLine="true"/>
                 </android.support.design.widget.TextInputLayout>
@@ -64,6 +66,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/emailEditText"
                         android:hint="@string/enterEmail"
                         android:singleLine="true"/>
 
@@ -76,6 +79,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/passwordEditText"
                         android:hint="@string/enterPassword"
                         android:singleLine="true"/>
 
@@ -94,6 +98,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/birthDateEditText"
                         android:hint="@string/enterBirthDate"
                         android:inputType="date"
                         android:singleLine="true"/>
@@ -107,6 +112,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/hireDateEditText"
                         android:hint="@string/enterHireDate"
                         android:inputType="date"
                         android:singleLine="true"/>
@@ -125,6 +131,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/phoneNumberEditText"
                         android:hint="@string/enterPhoneNum"
                         android:inputType="number"
                         android:singleLine="true"/>

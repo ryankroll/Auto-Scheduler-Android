@@ -1,5 +1,7 @@
 package com.example.rkroll.auto_scheduler;
 
+import android.os.Parcelable;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,13 +19,13 @@ public class EmployeeAdapter
     private final View.OnLongClickListener longClickListener;
 
     // List<String> used to obtain RecyclerView items' data
-    private final UserReaderDbHelper userDb;
-
+    //private final UserReaderDbHelper userDb;
+    private final List<ParseUser> currentEmployees;
 
     // constructor
-    public EmployeeAdapter(UserReaderDbHelper userDb,
+    public EmployeeAdapter(List<ParseUser> currentEmployees,
                            View.OnLongClickListener longClickListener) {
-        this.userDb = userDb;
+        this.currentEmployees = currentEmployees;
         this.longClickListener = longClickListener;
     }
 
@@ -64,13 +66,14 @@ public class EmployeeAdapter
     // sets the text of the list item to display the search tag
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.textView.setText(userDb.getUser("Ryan Kroll").toString());
+        holder.textView.setText(currentEmployees.get(position).getString("name"));
     }
 
     // returns the number of items that adapter binds
     @Override
     public int getItemCount() {
-        return 1;
+        return currentEmployees.size();
     }
+
 
 }

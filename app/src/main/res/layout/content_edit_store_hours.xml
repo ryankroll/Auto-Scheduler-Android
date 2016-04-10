@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.brian.companyclass.EditStoreHours"
+    tools:context="com.example.rkroll.auto_scheduler.EditStoreHours"
     tools:showIn="@layout/activity_edit_store_hours"
     android:orientation="vertical">
 
@@ -38,7 +38,6 @@
             android:id="@+id/sundayStartTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/sundayOpen"
             android:layout_gravity="bottom"
             android:layout_marginEnd="9dp"
             />
@@ -56,10 +55,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sundayCloseTime"
+            android:id="@+id/sundayEndTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/sundayClose"
             android:layout_gravity="bottom"
             android:layout_marginEnd="@dimen/largeSpacebar"
             />
@@ -136,7 +134,6 @@
             android:id="@+id/mondayStartTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/mondayOpen"
             android:layout_gravity="bottom"
             android:layout_marginEnd="9dp"
             />
@@ -157,7 +154,6 @@
             android:id="@+id/mondayEndTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/mondayClose"
             android:layout_gravity="bottom"
             android:layout_marginEnd="@dimen/largeSpacebar"
             />
@@ -231,7 +227,6 @@
             android:id="@+id/tuesdayStartTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/tuesdayOpen"
             android:layout_gravity="bottom"
             android:layout_marginEnd="9dp"
             />
@@ -252,7 +247,6 @@
             android:id="@+id/tuesdayEndTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/tuesdayClose"
             android:layout_gravity="bottom"
             android:layout_marginEnd="@dimen/largeSpacebar"
             />
@@ -313,7 +307,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/wednesdayStartTime"
+
 
             android:text="@string/wednesdayHrsText"
             android:textSize="@dimen/normalText"
@@ -325,9 +319,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/wednesdayStartTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/wednesdayOpen"
             android:layout_gravity="bottom"
             android:layout_marginEnd="9dp"
             />
@@ -335,7 +329,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/wednesdayEndTime"
 
             android:text="@string/dash"
             android:textSize="@dimen/normalText"
@@ -346,9 +339,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/wednesdayEndTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/wednesdayClose"
             android:layout_gravity="bottom"
             android:layout_marginEnd="@dimen/largeSpacebar"
             />
@@ -423,7 +416,6 @@
             android:id="@+id/thursdayStartTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/thursdayOpen"
             android:layout_gravity="bottom"
             android:layout_marginEnd="9dp"
             />
@@ -444,7 +436,6 @@
             android:id="@+id/thursdayEndTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/thursdayClose"
             android:layout_gravity="bottom"
             android:layout_marginEnd="@dimen/largeSpacebar"
             />
@@ -519,7 +510,6 @@
             android:id="@+id/fridayStartTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/fridayOpen"
             android:layout_gravity="bottom"
             android:layout_marginEnd="9dp"
             />
@@ -540,7 +530,6 @@
             android:id="@+id/fridayEndTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/fridayClose"
             android:layout_gravity="bottom"
             android:layout_marginEnd="@dimen/largeSpacebar"
             />
@@ -615,7 +604,6 @@
             android:id="@+id/saturdayStartTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/saturdayOpen"
             android:layout_gravity="bottom"
             android:layout_marginEnd="9dp"
             />
@@ -623,7 +611,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/saturdayEndTime"
 
             android:text="@string/dash"
             android:textSize="@dimen/normalText"
@@ -634,9 +621,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/saturdayEndTime"
 
             android:textSize="@dimen/normalText"
-            android:text="@string/saturdayClose"
             android:layout_gravity="bottom"
             android:layout_marginEnd="@dimen/largeSpacebar"
             />

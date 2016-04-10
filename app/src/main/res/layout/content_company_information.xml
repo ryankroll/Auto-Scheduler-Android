@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.brian.companyclass.CompanyInformation"
+    tools:context="com.example.rkroll.auto_scheduler.CompanyInformation"
     tools:showIn="@layout/activity_company_information"
     android:orientation="vertical"
     >
@@ -111,9 +111,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/sundayStartTime"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/sundayOpen"
                     android:layout_gravity="bottom"
                     android:layout_marginEnd="9dp"
                     />
@@ -131,9 +131,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/sundayEndTime"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/sundayClose"
                     android:layout_gravity="bottom"
                     />
             </LinearLayout>
@@ -159,10 +159,9 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/mondayOpen"
                     android:layout_gravity="bottom"
                     android:layout_marginEnd="9dp"
-                    />
+                    android:id="@+id/mondayStartTime"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -179,9 +178,8 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/mondayClose"
                     android:layout_gravity="bottom"
-                    />
+                    android:id="@+id/mondayEndTime"/>
             </LinearLayout>
 
             <LinearLayout
@@ -205,10 +203,9 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/tuesdayOpen"
                     android:layout_gravity="bottom"
                     android:layout_marginEnd="9dp"
-                    />
+                    android:id="@+id/tuesdayStartTime"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -225,8 +222,7 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/tuesdayClose"
-                    />
+                    android:id="@+id/tuesdayEndTime"/>
             </LinearLayout>
 
             <LinearLayout
@@ -250,10 +246,9 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/wednesdayOpen"
                     android:layout_gravity="bottom"
                     android:layout_marginEnd="9dp"
-                    />
+                    android:id="@+id/wednesdayStartTime"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -270,9 +265,8 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/wednesdayClose"
                     android:layout_gravity="bottom"
-                    />
+                    android:id="@+id/wednesdayEndTime"/>
             </LinearLayout>
 
             <LinearLayout
@@ -296,10 +290,9 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/thursdayOpen"
                     android:layout_gravity="bottom"
                     android:layout_marginEnd="9dp"
-                    />
+                    android:id="@+id/thursdayStartTime"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -316,9 +309,8 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/thursdayClose"
                     android:layout_gravity="bottom"
-                    />
+                    android:id="@+id/thursdayEndTime"/>
             </LinearLayout>
 
             <LinearLayout
@@ -342,10 +334,9 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/fridayOpen"
                     android:layout_gravity="bottom"
                     android:layout_marginEnd="9dp"
-                    />
+                    android:id="@+id/fridayStartTime"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -362,9 +353,8 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/fridayClose"
                     android:layout_gravity="bottom"
-                    />
+                    android:id="@+id/fridayEndTime"/>
             </LinearLayout>
 
             <LinearLayout
@@ -388,10 +378,9 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/saturdayOpen"
                     android:layout_gravity="bottom"
                     android:layout_marginEnd="9dp"
-                    />
+                    android:id="@+id/saturdayStartTime"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -408,9 +397,8 @@
                     android:layout_height="wrap_content"
 
                     android:textSize="@dimen/normalText"
-                    android:text="@string/saturdayClose"
                     android:layout_gravity="bottom"
-                    />
+                    android:id="@+id/saturdayEndTime"/>
 
 
             </LinearLayout>
