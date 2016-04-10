@@ -67,6 +67,15 @@
     <string name="fridayClose">2359</string>
     <string name="saturdayOpen">0000</string>
     <string name="saturdayClose">2359</string>
+
+    <string name="abSunday">Sun</string>
+    <string name="abMonday">Mon</string>
+    <string name="abTuesday">Tues</string>
+    <string name="abWednesday">Wed</string>
+    <string name="abThursday">Thurs</string>
+    <string name="abFriday">Fri</string>
+    <string name="abSaturday">Sat</string>
+
     <string name="title_activity_company_information">Company Information</string>
     <string name="title_activity_edit_store_hours">Edit Store Hours</string>
     <string name="title_activity_edit_company_information">Edit Company Information</string>

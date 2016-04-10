@@ -30,7 +30,8 @@
     <HorizontalScrollView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_marginBottom="@dimen/largeTopSpace">
+        android:layout_marginBottom="@dimen/largeTopSpace"
+        android:paddingTop="@dimen/fab_margin">
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,52 +42,53 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content">
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/tableSize"
                     android:layout_height="wrap_content"
 
-                    android:text="Sunday"
+                    android:text="@string/abSunday"
                     android:layout_marginEnd="@dimen/fab_margin"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/tableSize"
                     android:layout_height="wrap_content"
 
-                    android:text="Monday"
+                    android:text="@string/abMonday"
                     android:layout_marginEnd="@dimen/fab_margin"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/tableSize"
                     android:layout_height="wrap_content"
 
-                    android:text="Tuesday"
+                    android:text="@string/abTuesday"
                     android:layout_marginEnd="@dimen/fab_margin"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/tableSize"
                     android:layout_height="wrap_content"
 
-                    android:text="Wednesday"
+                    android:text="@string/abWednesday"
                     android:layout_marginEnd="@dimen/fab_margin"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/tableSize"
                     android:layout_height="wrap_content"
 
-                    android:text="Thursday"
+                    android:text="@string/abThursday"
                     android:layout_marginEnd="@dimen/fab_margin"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/tableSize"
                     android:layout_height="wrap_content"
 
-                    android:text="Friday"
+                    android:text="@string/abFriday"
                     android:layout_marginEnd="@dimen/fab_margin"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/tableSize"
                     android:layout_height="wrap_content"
 
-                    android:text="Saturday"
+                    android:text="@string/abSaturday"
                     android:layout_marginEnd="@dimen/fab_margin"/>
             </TableRow>
 
             <TableRow
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content">
+                android:layout_width="wrap_content"
+                android:paddingBottom="@dimen/fab_margin">
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -157,13 +159,16 @@
 
     <HorizontalScrollView
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/fab_margin">
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/mediumText">
-
-
+            android:paddingBottom="@dimen/fab_margin"
+            android:textSize="@dimen/mediumText"
+            android:id="@+id/weekSchedule"
+            android:padding="10dp"
+            >
 
         </TableLayout>
     </HorizontalScrollView>
