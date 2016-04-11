@@ -4,7 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" android:protectionLevel="signature"/>
+
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature"/>
 
     <application
         android:allowBackup="true"
@@ -133,6 +136,42 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.GeneralManager"/>
+        </activity>
+        <activity
+            android:name=".UserOptions"
+            android:label="@string/title_activity_user_options"
+            android:parentActivityName=".HomeScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.HomeScreen"/>
+        </activity>
+        <activity
+            android:name=".EditPersonalInfo"
+            android:label="@string/title_activity_edit_personal_info"
+            android:parentActivityName=".UserOptions"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.UserOptions"/>
+        </activity>
+        <activity
+            android:name=".EditPersonalAvail"
+            android:label="@string/title_activity_edit_personal_avail"
+            android:parentActivityName=".UserOptions"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.UserOptions"/>
+        </activity>
+        <activity
+            android:name=".MakeTimeOffRequest"
+            android:label="@string/title_activity_make_time_off_request"
+            android:parentActivityName=".UserOptions"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.UserOptions"/>
         </activity>
     </application>
 

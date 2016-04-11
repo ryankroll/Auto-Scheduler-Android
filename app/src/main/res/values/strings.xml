@@ -6,6 +6,14 @@
     <string name="addEmployee">Add New Employee</string>
     <string name="promoteDeleteTitle">"%s"</string>
     <string name="promoteToTitle">Promote "%s" to:</string>
+    <string name="userScreen">User Options</string>
+    <string name="userInfo">Personal Information</string>
+    <string name="userAvail">User Availability</string>
+    <string name="editPersonalInfo">Change Information</string>
+    <string name="editPersonalAvail">Change Availability</string>
+    <string name="emailLabel">Email:</string>
+    <string name="phoneNumberLabel">Phone Number:</string>
+    <string name="numberHint">Enter Phone Number</string>
 
     <string name="profile_title_logged_in">You are logged in as</string>
     <string name="profile_logout_button_label">Log out</string>
@@ -46,11 +54,29 @@
     <string name="companyNameHint">Enter Company Name</string>
     <string name="storeIdHint">Enter the store ID</string>
     <string name="editTime">Edit time:</string>
-    <string name="open">Open</string>
-    <string name="close">Close</string>
     <string name="schedule">Weekly Schedule</string>
     <string name="userSchedule">User Schedule</string>
     <string name="current_employees">Current Employees</string>
+    <string name="makeTimeReq">Time Off Request</string>
+    <string name="startingDate">Start Date:</string>
+    <string name="endingDate">End Date</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="sunStart">Start Sunday</string>
+    <string name="sunEnd">End Sunday</string>
+    <string name="monStart">Start Monday</string>
+    <string name="monEnd">End Monday</string>
+    <string name="tuesStart">Start Tuesday</string>
+    <string name="tuesEnd">End Tuesday</string>
+    <string name="wedStart">Start Wednesday</string>
+    <string name="wedEnd">End Wednesday</string>
+    <string name="thurStart">Start Thursday</string>
+    <string name="thurEnd">End Thursday</string>
+    <string name="friStart">Start Friday</string>
+    <string name="friEnd">End Friday</string>
+    <string name="satStart">Start Saturday</string>
+    <string name="satEnd">End Saturday</string>
 
 
     <string name="sundayOpen">0000</string>
@@ -87,4 +113,8 @@
 
     <string name="approvalTitle">Approve/Deny Requests</string>
     <string name="title_activity_view_manager_requests">View Manager Requests</string>
+    <string name="title_activity_user_options">User Options</string>
+    <string name="title_activity_edit_personal_info">EditPersonalInfo</string>
+    <string name="title_activity_edit_personal_avail">EditPersonalAvail</string>
+    <string name="title_activity_make_time_off_request">Time Off Request</string>
 </resources>

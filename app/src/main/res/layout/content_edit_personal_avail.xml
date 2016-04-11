@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rkroll.auto_scheduler.EditPersonalAvail"
+    tools:showIn="@layout/activity_edit_personal_avail"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/sundayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="bottom"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sundayStartTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sundayEndTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSundayStartTime"
+
+            android:inputType="number"
+            android:hint="@string/sunStart"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSundayEndTime"
+
+            android:inputType="number"
+            android:hint="@string/sunEnd"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:background="@color/inputHighlights"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/mondayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="@dimen/smallTopSpace"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mondayStartTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mondayEndTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/monStart"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editMondayStartTime"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/monEnd"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editMondayEndTime"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/tuesdayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tuesdayStartTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tuesdayEndTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/tuesStart"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editTuesdayStartTime"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/tuesEnd"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editTuesdayEndTime"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="@string/wednesdayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wednesdayStartTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wednesdayEndTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/wedStart"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editWednesdayStartTime"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/wedEnd"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editWednesdayEndTime"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/thursdayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thursdayStartTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thursdayEndTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/thurStart"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editThursdayStartTime"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/thurEnd"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editThursdayEndTime"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/fridayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fridayStartTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fridayEndTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/friStart"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editFridayStartTime"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/friEnd"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editFridayEndTime"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/saturdayHrsText"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saturdayStartTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saturdayEndTime"
+
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/normalText"
+            android:text="@string/editTime"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/largeSpacebar"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/satStart"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editSaturdayStartTime"
+            android:layout_marginEnd="16dp"
+            android:background="@color/inputHighlights"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/dash"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="number"
+            android:hint="@string/satEnd"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/editSaturdayEndTime"
+            android:background="@color/inputHighlights"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/buttonSave"
+        android:layout_marginTop="@dimen/topSpace"
+        android:layout_gravity="end"
+        android:id="@+id/saveButton"
+
+        />
+</GridLayout>

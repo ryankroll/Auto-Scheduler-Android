@@ -82,7 +82,7 @@ public class Availability extends AppCompatActivity {
 
     */
 
-
+/*
     public void objectRetrievalSuccessful(ParseObject object){
         String temp = String.format(Locale.getDefault(), "%04d", object.getInt
                 ("sundayStartTime")) + " - " + String.format(Locale.getDefault(), "%04d", object
@@ -144,5 +144,5 @@ public class Availability extends AppCompatActivity {
 
     public boolean checkIfZero(String s) {
         return (s.equals("0000 - 0000"));
-    }
+    }*/
 }

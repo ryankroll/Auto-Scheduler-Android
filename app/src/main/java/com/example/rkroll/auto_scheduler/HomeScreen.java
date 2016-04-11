@@ -128,8 +128,17 @@ public class HomeScreen extends AppCompatActivity {
             }*/
 
         }
+
+        if (id == R.id.user_options){
+
+            Intent intent = new Intent(this, UserOptions.class);
+            startActivity(intent);
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
+
+
     public void objectRetrievalSuccessful(ParseObject object){
         String temp = String.format(Locale.getDefault(), "%04d", object.getInt
                 ("sundayStartTime")) + " - " + String.format(Locale.getDefault(), "%04d", object
