@@ -59,5 +59,5 @@ public class UserOptions extends AppCompatActivity {
         Intent intent = new Intent(this, EditPersonalAvail.class);
         startActivity(intent);
     }
-    
+
 }

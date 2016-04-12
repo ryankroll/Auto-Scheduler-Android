@@ -77,6 +77,12 @@
     <string name="friEnd">End Friday</string>
     <string name="satStart">Start Saturday</string>
     <string name="satEnd">End Saturday</string>
+    <string name="schedHistory">View Schedule History</string>
+    <string name="createEditSched">Create/Edit Schedule</string>
+    <string name="enterHistoryDate">Enter Dates</string>
+    <string name="createSched">Create New Schedule</string>
+    <string name="editSched">Edit New Schedule</string>
+    <string name="editDay">Edit Date</string>
 
 
     <string name="sundayOpen">0000</string>
@@ -102,6 +108,14 @@
     <string name="abFriday">Fri</string>
     <string name="abSaturday">Sat</string>
 
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
     <string name="title_activity_company_information">Company Information</string>
     <string name="title_activity_edit_store_hours">Edit Store Hours</string>
     <string name="title_activity_edit_company_information">Edit Company Information</string>
@@ -117,4 +131,6 @@
     <string name="title_activity_edit_personal_info">EditPersonalInfo</string>
     <string name="title_activity_edit_personal_avail">EditPersonalAvail</string>
     <string name="title_activity_make_time_off_request">Time Off Request</string>
+    <string name="title_activity_create_edit_schedule">Create/Edit Schedule</string>
+    <string name="title_activity_schedule_history">Schedule History</string>
 </resources>

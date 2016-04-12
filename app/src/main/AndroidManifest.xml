@@ -173,6 +173,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.UserOptions"/>
         </activity>
+        <activity
+            android:name=".CreateEditSchedule"
+            android:label="@string/title_activity_create_edit_schedule"
+            android:parentActivityName=".Manager"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.Manager"/>
+        </activity>
+        <activity
+            android:name=".ScheduleHistory"
+            android:label="@string/title_activity_schedule_history"
+            android:parentActivityName=".Manager"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.Manager"/>
+        </activity>
     </application>
 
 </manifest>
