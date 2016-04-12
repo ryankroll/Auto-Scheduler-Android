@@ -21,7 +21,7 @@
 
         android:text="@string/createSched"
         android:layout_gravity="center"
-        android:textSize="@dimen/mediumText"
+        android:textSize="@dimen/normalText"
         />
 
     <TextView
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
 
         android:text="@string/editSched"
-        android:textSize="@dimen/medLargText"
+        android:textSize="@dimen/mediumText"
         android:textStyle="bold"
         android:paddingTop="@dimen/xlSpace"
         android:layout_gravity="center"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
 
         android:text="@string/sunday"
-        android:textSize="@dimen/mediumText"
+        android:textSize="@dimen/normalText"
         android:textStyle="bold"
         android:paddingTop="@dimen/fab_margin"
         />
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
 
         android:text="@string/monday"
-        android:textSize="@dimen/mediumText"
+        android:textSize="@dimen/normalText"
         android:textStyle="bold"
         android:paddingTop="@dimen/fab_margin"
         />
