@@ -672,6 +672,41 @@
             android:id="@+id/editSaturdayEndTime"
             android:background="@color/inputHighlights"
             />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallTopSpace">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/effectiveDate"
+            android:id="@+id/textView2"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/normalText"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="date"
+            android:hint="@string/editEffectiveDate"
+            android:textSize="@dimen/normalText"
+            android:layout_gravity="bottom"
+            android:id="@+id/effectiveDate"
+            android:background="@color/inputHighlights"
+            />
+
     </LinearLayout>
 
     <Button
@@ -684,4 +719,5 @@
         android:id="@+id/saveButton"
 
         />
+
 </GridLayout>

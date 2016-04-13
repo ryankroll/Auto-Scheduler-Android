@@ -133,4 +133,7 @@
     <string name="title_activity_make_time_off_request">Time Off Request</string>
     <string name="title_activity_create_edit_schedule">Create/Edit Schedule</string>
     <string name="title_activity_schedule_history">Schedule History</string>
+
+    <string name="effectiveDate">Effective Date: </string>
+    <string name="editEffectiveDate">Enter effective date</string>
 </resources>

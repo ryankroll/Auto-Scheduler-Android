@@ -121,60 +121,60 @@ public class EditStoreHours extends AppCompatActivity {
     private final View.OnClickListener saveButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (!(isEmpty(sundayStartEditText))) {
+            if ((isEmpty(sundayStartEditText))) {
                 int temp = Integer.parseInt(sundayStartEditText.getText().toString());
                 currentCompany.put("sundayStartTime", temp);
             }
-            if (!(isEmpty(sundayEndEditText))) {
+            if ((isEmpty(sundayEndEditText))) {
                 int temp = Integer.parseInt(sundayEndEditText.getText().toString());
                 currentCompany.put("sundayEndTime", temp);
             }
-            if (!(isEmpty(mondayStartEditText))) {
+            if ((isEmpty(mondayStartEditText))) {
                 int temp = Integer.parseInt(mondayStartEditText.getText().toString());
                 currentCompany.put("mondayStartTime", temp);
             }
 
-            if (!(isEmpty(mondayEndEditText ))) {
+            if ((isEmpty(mondayEndEditText ))) {
                 int temp = Integer.parseInt(mondayEndEditText.getText().toString());
                 currentCompany.put("mondayEndTime", temp);
             }
-            if (!(isEmpty(tuesdayStartEditText))) {
+            if ((isEmpty(tuesdayStartEditText))) {
                 int temp = Integer.parseInt(tuesdayStartEditText.getText().toString());
                 currentCompany.put("tuesdayStartTime", temp);
             }
-            if (!(isEmpty(tuesdayEndEditText))) {
+            if ((isEmpty(tuesdayEndEditText))) {
                 int temp = Integer.parseInt(tuesdayEndEditText.getText().toString());
                 currentCompany.put("tuesdayEndTime", temp);
             }
-            if (!(isEmpty(wednesdayStartEditText))) {
+            if ((isEmpty(wednesdayStartEditText))) {
                 int temp = Integer.parseInt(wednesdayStartEditText.getText().toString());
                 currentCompany.put("wednesdayStartTime", temp);
             }
-            if (!(isEmpty(wednesdayEndEditText))) {
+            if ((isEmpty(wednesdayEndEditText))) {
                 int temp = Integer.parseInt(wednesdayEndEditText.getText().toString());
                 currentCompany.put("wednesdayEndTime", temp);
             }
-            if (!(isEmpty(thursdayStartEditText))) {
+            if ((isEmpty(thursdayStartEditText))) {
                 int temp = Integer.parseInt(thursdayStartEditText.getText().toString());
                 currentCompany.put("thursdayStartTime", temp);
             }
-            if (!(isEmpty(thursdayEndEditText))) {
+            if ((isEmpty(thursdayEndEditText))) {
                 int temp = Integer.parseInt(thursdayEndEditText.getText().toString());
                 currentCompany.put("thursdayEndTime", temp);
             }
-            if (!(isEmpty(fridayStartEditText))) {
+            if ((isEmpty(fridayStartEditText))) {
                 int temp = Integer.parseInt(fridayStartEditText.getText().toString());
                 currentCompany.put("fridayStartTime", temp);
             }
-            if (!(isEmpty(fridayEndEditText))) {
+            if ((isEmpty(fridayEndEditText))) {
                 int temp = Integer.parseInt(fridayEndEditText.getText().toString());
                 currentCompany.put("fridayEndTime", temp);
             }
-            if (!(isEmpty(saturdayStartEditText))) {
+            if ((isEmpty(saturdayStartEditText))) {
                 int temp = Integer.parseInt(saturdayStartEditText.getText().toString());
                 currentCompany.put("saturdayStartTime", temp);
             }
-            if (!(isEmpty(saturdayEndEditText))) {
+            if ((isEmpty(saturdayEndEditText))) {
                 int temp = Integer.parseInt(saturdayEndEditText.getText().toString());
                 currentCompany.put("saturdayEndTime", temp);
             }

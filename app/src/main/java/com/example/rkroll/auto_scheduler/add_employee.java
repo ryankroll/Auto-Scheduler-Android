@@ -47,7 +47,7 @@ public class add_employee extends AppCompatActivity {
 
     SimpleDateFormatStringToDate mDate = new SimpleDateFormatStringToDate();
 
-    private String userSession;
+    //private String userSession;
     ParseUser currentUser = new ParseUser();
 
 
@@ -70,7 +70,7 @@ public class add_employee extends AppCompatActivity {
         submit = (Button) findViewById(R.id.submit);
         submit.setOnClickListener(submitListener);
 
-        userSession = currentUser.getSessionToken();
+        //userSession = currentUser.getSessionToken();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

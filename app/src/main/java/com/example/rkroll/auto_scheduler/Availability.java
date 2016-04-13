@@ -13,14 +13,21 @@ import com.parse.ParseUser;
 
 import java.util.Locale;
 
-public class Availability extends AppCompatActivity {
-    private TextView sundayTime;
-    private TextView mondayTime;
-    private TextView tuesdayTime;
-    private TextView wednesdayTime;
-    private TextView thursdayTime;
-    private TextView fridayTime;
-    private TextView saturdayTime;
+public class Availability {
+    private TextView sundayStartTextView;
+    private TextView sundayEndTextView;
+    private TextView mondayStartTextView;
+    private TextView mondayEndTextView;
+    private TextView tuesdayStartTextView;
+    private TextView tuesdayEndTextView;
+    private TextView wednesdayStartTextView;
+    private TextView wednesdayEndTextView;
+    private TextView thursdayStartTextView;
+    private TextView thursdayEndTextView;
+    private TextView fridayStartTextView;
+    private TextView fridayEndTextView;
+    private TextView saturdayStartTextView;
+    private TextView saturdayEndTextView;
 
     private EditText sundayStartEditText;
     private EditText sundayEndEditText;

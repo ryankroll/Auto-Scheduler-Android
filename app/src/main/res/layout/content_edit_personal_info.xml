@@ -129,7 +129,7 @@
             android:inputType="number"
             android:hint="@string/numberHint"
             android:background="@color/inputHighlights"
-            android:id="@+id/editStoreID"
+            android:id="@+id/editPhoneNumber"
             android:layout_marginTop="@dimen/topSpace"
 
             />

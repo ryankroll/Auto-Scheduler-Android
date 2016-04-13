@@ -36,4 +36,19 @@ public class SimpleDateFormatStringToDate {
         }
         return date;
     }
+
+    public static String parseDate(Date dateObject, String[] formats) {
+        String dateString = null;
+        boolean success = false;
+
+        for (int i = 0; i < formats.length; i++) {
+            String format = formats[i];
+            SimpleDateFormat dateFormat = new SimpleDateFormat(format);
+
+            dateString = dateFormat.format(dateObject);
+            success = true;
+            break;
+        }
+        return dateString;
+    }
 }

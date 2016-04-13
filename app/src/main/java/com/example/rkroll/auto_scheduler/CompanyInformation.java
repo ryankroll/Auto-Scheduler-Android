@@ -111,27 +111,5 @@ public class CompanyInformation extends AppCompatActivity {
         saturdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("saturdayEndTime")));
     }
 
-/*
-    public void displayStoreHours(ParseObject object) {
-        sundayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("sundayStartTime")));
-        sundayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("sundayEndTime")));
-        mondayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("mondayStartTime")));
-        mondayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("mondayEndTime")));
-        tuesdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
-                ("tuesdayStartTime")));
-        tuesdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("tuesdayEndTime")));
-        wednesdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
-                ("wednesdayStartTime")));
-        wednesdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("wednesdayEndTime")));
-        thursdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
-                ("thursdayStartTime")));
-        thursdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("thursdayEndTime")));
-        fridayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("fridayStartTime")));
-        fridayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("fridayEndTime")));
-        saturdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
-                ("saturdayStartTime")));
-        saturdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("saturdayEndTime")));
-    }
-*/
 
 }
