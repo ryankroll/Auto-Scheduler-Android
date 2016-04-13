@@ -24,10 +24,10 @@ import java.util.List;
 public class ViewManagerRequests extends AppCompatActivity {
 
     private EmployeeAdapter adapter;
-    private RecyclerView requestRV;
-    private RecyclerView availRV;
-    LinearLayoutManager llmRequest = new LinearLayoutManager(this);
-    LinearLayoutManager llmAvail = new LinearLayoutManager(this);
+//    private RecyclerView requestRV;
+//    private RecyclerView availRV;
+//    LinearLayoutManager llmRequest = new LinearLayoutManager(this);
+//    LinearLayoutManager llmAvail = new LinearLayoutManager(this);
     private UserReaderDbHelper userDb;
     private List<ParseUser> currentEmployees;
 
@@ -43,18 +43,18 @@ public class ViewManagerRequests extends AppCompatActivity {
 
 
         // Getting the two different references for the Recycler Views
-        requestRV = (RecyclerView) findViewById(R.id.requestRecyclerView);
-        availRV = (RecyclerView) findViewById(R.id.availRecyclerView);
+//        requestRV = (RecyclerView) findViewById(R.id.requestRecyclerView);
+//        availRV = (RecyclerView) findViewById(R.id.availRecyclerView);
 
 
-        requestRV.setLayoutManager(llmRequest);
-//        adapter = new EmployeeAdapter(b, itemClickListener, itemLongClickListener);
-        requestRV.setAdapter(adapter);
-
-
-        availRV.setLayoutManager(llmAvail);
-//        adapter = new EmployeeAdapter(b, itemClickListener, itemLongClickListener);
-        availRV.setAdapter(adapter);
+//        requestRV.setLayoutManager(llmRequest);
+////        adapter = new EmployeeAdapter(b, itemClickListener, itemLongClickListener);
+//        requestRV.setAdapter(adapter);
+//
+//
+//        availRV.setLayoutManager(llmAvail);
+////        adapter = new EmployeeAdapter(b, itemClickListener, itemLongClickListener);
+//        availRV.setAdapter(adapter);
 
 
 
@@ -74,8 +74,8 @@ public class ViewManagerRequests extends AppCompatActivity {
             new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View view) {
-                    // get the tag that the user long touched
-                    final String tag = ((TextView) view).getText().toString();
+//                    // get the tag that the user long touched
+//                    final String tag = ((TextView) view).getText().toString();
 
                     return true;
                 }

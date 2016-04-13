@@ -39,10 +39,10 @@ public class GeneralManager extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
-    private List<ParseUser> currentEmployees;  // List of employees for viewing
-    private EmployeeAdapter adapter;
-    private RecyclerView rv;
-    LinearLayoutManager llm = new LinearLayoutManager(this);
+//    private List<ParseUser> currentEmployees;  // List of employees for viewing
+//    private EmployeeAdapter adapter;
+//    private RecyclerView rv;
+//    LinearLayoutManager llm = new LinearLayoutManager(this);
     //private UserReaderDbHelper userDb;
 
     @Override
@@ -53,11 +53,11 @@ public class GeneralManager extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         // get reference to the RecyclerView to configure it
-        rv=(RecyclerView)findViewById(R.id.employeeRecyclerView);
+        //rv=(RecyclerView)findViewById(R.id.employeeRecyclerView);
 
         // use a LinearLayoutManager to display items in a vertical list
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        rv.setLayoutManager(llm);
+//        LinearLayoutManager llm = new LinearLayoutManager(this);
+//        rv.setLayoutManager(llm);
 
         //userDb = new UserReaderDbHelper(this);
 
@@ -203,12 +203,12 @@ public class GeneralManager extends AppCompatActivity {
     }
 
     private void deleteEmployee(String emp){
-        adapter.notifyDataSetChanged();
+//        adapter.notifyDataSetChanged();
     }
 
     private void initializeData() {
         Log.d("used", "intializeData");
-        currentEmployees = new ArrayList<>();
+//        currentEmployees = new ArrayList<>();
         ParseQuery<ParseUser> query = ParseUser.getQuery();
         query.findInBackground(new FindCallback<ParseUser>() {
             @Override
@@ -216,7 +216,7 @@ public class GeneralManager extends AppCompatActivity {
                 if (objects != null) {
                     //currentEmployees.clear();
                     for (int i = 0; i < objects.size(); i++) {
-                        currentEmployees.add(objects.get(i));
+//                        currentEmployees.add(objects.get(i));
                         //userDb.insertUser("ryan", "test Id");
                         /*userDb.insertUser(currentEmployees.get(i).getString("name"),
                                 currentEmployees.get(i).getObjectId());
@@ -232,9 +232,9 @@ public class GeneralManager extends AppCompatActivity {
 
     private void initializeAdapter() {
         // create RecyclerView.Adapter to bind tags to the RecyclerView
-        adapter = new EmployeeAdapter(
-                currentEmployees, itemLongClickListener);
-        rv.setAdapter(adapter);
+//        adapter = new EmployeeAdapter(
+//                currentEmployees, itemLongClickListener);
+//        rv.setAdapter(adapter);
     }
 
     private void startViewEmployeeInfo() {
