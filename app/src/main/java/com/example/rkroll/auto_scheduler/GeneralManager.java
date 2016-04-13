@@ -112,86 +112,14 @@ public class GeneralManager extends AppCompatActivity {
 
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "GeneralManager Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://com.example.rkroll.auto_scheduler/http/host/path")
-        );
-        AppIndex.AppIndexApi.start(client, viewAction);
-    }
-/*
-    @Override
-    public void onResume() {
-        super.onResume();
-        if (mListState != null) {
-           llm.onRestoreInstanceState(mListState);
-        }
-        Log.d("Called on resume", "");
-    }
-
-    protected void onSaveInstanceState(Bundle state) {
-        super.onSaveInstanceState(state);
-        mListState = llm.onSaveInstanceState();
-        state.putParcelable(LIST_STATE_KEY, mListState);
-        Log.d("Called", "On Save State");
-
-    }
-
-    protected void onRestoreInstanceState(Bundle state) {
-        super.onRestoreInstanceState(state);
-
-        if (state != null) {
-            mListState = state.getParcelable("LIST_STATE_KEY");
-        }
-        Log.d("Called", "On Restore State");
-    }
-    */
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "GeneralManager Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://com.example.rkroll.auto_scheduler/http/host/path")
-        );
-        AppIndex.AppIndexApi.end(client, viewAction);
-        client.disconnect();
-    }
-
-
     // itemClickListener launches employee info activity for General Manager
     private final View.OnClickListener itemClickListener =
             new View.OnClickListener() {
 
-
                 @Override
                 public void onClick(View view) {
 
-                    // create an Intent to launch new activity to view specific employee
-//                    Intent intent = new Intent(this, ViewEmployeeInfo.class);
-//
-//                    startActivity(intent); // Go to Employee info screen
+                    startViewEmployeeInfo();
                 }
             };
 
@@ -309,5 +237,10 @@ public class GeneralManager extends AppCompatActivity {
         rv.setAdapter(adapter);
     }
 
+    private void startViewEmployeeInfo() {
+        // create an Intent to launch new activity to view specific employee
+        Intent intent = new Intent(this, ViewEmployeeInfo.class);
+        startActivity(intent); // Go to Employee info screen
+    }
 
 }

@@ -117,10 +117,8 @@ public class UserOptions extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //If general manager button is pressed from menu attempt to access general manager settings
         if (id == R.id.action_settings) {
 
-            //if (currentUser.getBoolean("isGeneralManager")) {
             Intent intent = new Intent(this, MakeTimeOffRequest.class);
             startActivity(intent);
             return true;
