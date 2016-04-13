@@ -191,6 +191,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.Manager"/>
         </activity>
+        <activity
+            android:name=".ManagerOptions"
+            android:label="@string/title_activity_manager_options"
+            android:parentActivityName=".HomeScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.HomeScreen"/>
+        </activity>
     </application>
 
 </manifest>

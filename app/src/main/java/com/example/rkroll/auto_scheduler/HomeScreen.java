@@ -119,7 +119,7 @@ public class HomeScreen extends AppCompatActivity {
         if (id == R.id.man_settings) {
 
             //if (currentUser.getBoolean("isManager")) {
-                Intent intent = new Intent(this, Manager.class);
+                Intent intent = new Intent(this, ManagerOptions.class);
                 startActivity(intent);
                 return true;
             /*} else {
@@ -202,52 +202,52 @@ public class HomeScreen extends AppCompatActivity {
         return (s.equals("0000 - 0000"));
     }
 
-        private void buildTable(int col, int rows) {
-                TextView tv;
-                TableRow tr;
-                String day = null;
-                String tableBox = null;
-                int dimen = (int) this.getResources().getDimension(R.dimen.tableSize);
+    private void buildTable(int col, int rows) {
+        TextView tv;
+        TableRow tr;
+        String day = null;
+        String tableBox = null;
+        int dimen = (int) this.getResources().getDimension(R.dimen.tableSize);
 
-                        for (int i = 1; i <= rows; i++) {
-                        tr = new TableRow(this);
-                        tr.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
-                                        LayoutParams.WRAP_CONTENT));
+        for (int i = 1; i <= rows; i++) {
+        tr = new TableRow(this);
+        tr.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
+                        LayoutParams.WRAP_CONTENT));
 
-                                for (int j = 1; j <= col; j++) {
-                               tv = new TextView(this);
-                                tv.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
-                                                LayoutParams.WRAP_CONTENT));
-                                tv.setPadding(5, 5, 30, 5);
+            for (int j = 1; j <= col; j++) {
+            tv = new TextView(this);
+            tv.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
+                            LayoutParams.WRAP_CONTENT));
+            tv.setPadding(5, 5, 30, 5);
 
-                                        if (j == 1){
-                                        switch(i){
-                                                case 1: day = "Sun: ";
-                                                        break;
-                                                case 2: day = "Mon: ";
-                                                        break;
-                                                case 3: day = "Tues: ";
-                                                        break;
-                                                case 4: day = "Wed: ";
-                                                       break;
-                                                case 5: day = "Thurs: ";
-                                                        break;
-                                                case 6: day = "Fri: ";
-                                                        break;
-                                                case 7: day = "Sat: ";
-                                                        break;
-                                            }
-                                        tv.setText(day);
-                                    }else{
-                                        tableBox = "R" + i + ", C" + j;
-                                        tv.setText(tableBox);
-                                    }
-                                tr.addView(tv);
-
-                                    }
-
-                                tableLayout.addView(tr);
+                if (j == 1){
+                    switch(i){
+                        case 1: day = "Sun: ";
+                                break;
+                        case 2: day = "Mon: ";
+                                break;
+                        case 3: day = "Tues: ";
+                                break;
+                        case 4: day = "Wed: ";
+                               break;
+                        case 5: day = "Thurs: ";
+                                break;
+                        case 6: day = "Fri: ";
+                                break;
+                        case 7: day = "Sat: ";
+                                break;
                     }
-           }
+                tv.setText(day);
+                }else{
+                    tableBox = "R" + i + ", C" + j;
+                    tv.setText(tableBox);
+                }
+                tr.addView(tv);
+
+            }  // End of second for loop
+
+            tableLayout.addView(tr);
+        } // End of first for loop
+   }
 
 }
