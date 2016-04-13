@@ -176,20 +176,20 @@
         <activity
             android:name=".CreateEditSchedule"
             android:label="@string/title_activity_create_edit_schedule"
-            android:parentActivityName=".Manager"
+            android:parentActivityName=".ManagerOptions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.rkroll.auto_scheduler.Manager"/>
+                android:value="com.example.rkroll.auto_scheduler.ManagerOptions"/>
         </activity>
         <activity
             android:name=".ScheduleHistory"
             android:label="@string/title_activity_schedule_history"
-            android:parentActivityName=".Manager"
+            android:parentActivityName=".ManagerOptions"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.rkroll.auto_scheduler.Manager"/>
+                android:value="com.example.rkroll.auto_scheduler.ManagerOptions"/>
         </activity>
         <activity
             android:name=".ManagerOptions"
@@ -199,6 +199,24 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.HomeScreen"/>
+        </activity>
+        <activity
+            android:name=".AvailRequest"
+            android:label="@string/title_activity_avail_request"
+            android:parentActivityName=".ManagerOptions"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.ManagerOptions"/>
+        </activity>
+        <activity
+            android:name=".ViewManagerAvailChange"
+            android:label="@string/title_activity_view_manager_avail_change"
+            android:parentActivityName=".ViewManagerRequests"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rkroll.auto_scheduler.ViewManagerRequests"/>
         </activity>
     </application>
 

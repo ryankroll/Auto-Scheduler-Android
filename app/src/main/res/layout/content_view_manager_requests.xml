@@ -14,79 +14,47 @@
     tools:showIn="@layout/activity_view_manager_requests"
     android:orientation="vertical">
 
-    <ScrollView
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/xlSpace"
-        android:layout_marginStart="@dimen/xlSpace">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+        android:layout_gravity="center"
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
+        android:text="@string/requests"
+        android:textSize="@dimen/mediumText"
+        android:textStyle="bold"
+        />
 
-                    android:text="@string/requests"
-                    android:textSize="@dimen/mediumText"
-                    android:textStyle="bold"
-                    />
-            </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/fab_margin"
+        android:textSize="@dimen/mediumText"
+        android:id="@+id/reqList"
+        android:padding="10dp"
+        android:background="@color/listHighlights">
+    </ListView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/fab_margin">
 
-                <android.support.v7.widget.RecyclerView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:id="@+id/requestRecyclerView"
-                    android:paddingRight="@dimen/activity_horizontal_margin"
-                    android:paddingLeft="@dimen/activity_horizontal_margin"
-                    android:textAlignment="center"/>
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/largeTopSpace"
-                android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
+        android:text="@string/availability"
+        android:textSize="@dimen/mediumText"
+        android:textStyle="bold"
+        />
 
-                    android:text="@string/availability"
-                    android:textSize="@dimen/mediumText"
-                    android:textStyle="bold"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:layout_marginTop="@dimen/fab_margin">
-
-                <android.support.v7.widget.RecyclerView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:id="@+id/availRecyclerView"
-                    android:paddingRight="@dimen/activity_horizontal_margin"
-                    android:paddingLeft="@dimen/activity_horizontal_margin"
-                    android:textAlignment="center"/>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/fab_margin"
+        android:textSize="@dimen/mediumText"
+        android:id="@+id/availList"
+        android:padding="10dp"
+        android:background="@color/listHighlights">
+    </ListView>
 </LinearLayout>

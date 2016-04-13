@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.rkroll.auto_scheduler.Manager">
+    tools:context="com.example.rkroll.auto_scheduler.AvailRequest">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -22,6 +22,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_manager"/>
+    <include layout="@layout/content_avail_request"/>
 
 </android.support.design.widget.CoordinatorLayout>
