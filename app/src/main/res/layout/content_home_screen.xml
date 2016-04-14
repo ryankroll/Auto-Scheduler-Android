@@ -15,161 +15,178 @@
     android:orientation="vertical">
 
 
-
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-
-        android:text="@string/userSchedule"
-        android:textStyle="bold"
-        android:textSize="@dimen/medLargText"
-        />
-
-    <HorizontalScrollView
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="@dimen/largeTopSpace"
-        android:paddingTop="@dimen/fab_margin">
-        <TableLayout
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/mediumText">
+            android:orientation="vertical">
 
-
-            <TableRow
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content">
-                <TextView
-                    android:layout_width="@dimen/tableSize"
-                    android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
 
-                    android:text="@string/abSunday"
-                    android:layout_marginEnd="@dimen/fab_margin"/>
-                <TextView
-                    android:layout_width="@dimen/tableSize"
-                    android:layout_height="wrap_content"
+                android:text="@string/userSchedule"
+                android:textStyle="bold"
+                android:textSize="@dimen/medLargText"
+                />
 
-                    android:text="@string/abMonday"
-                    android:layout_marginEnd="@dimen/fab_margin"/>
-                <TextView
-                    android:layout_width="@dimen/tableSize"
-                    android:layout_height="wrap_content"
-
-                    android:text="@string/abTuesday"
-                    android:layout_marginEnd="@dimen/fab_margin"/>
-                <TextView
-                    android:layout_width="@dimen/tableSize"
-                    android:layout_height="wrap_content"
-
-                    android:text="@string/abWednesday"
-                    android:layout_marginEnd="@dimen/fab_margin"/>
-                <TextView
-                    android:layout_width="@dimen/tableSize"
-                    android:layout_height="wrap_content"
-
-                    android:text="@string/abThursday"
-                    android:layout_marginEnd="@dimen/fab_margin"/>
-                <TextView
-                    android:layout_width="@dimen/tableSize"
-                    android:layout_height="wrap_content"
-
-                    android:text="@string/abFriday"
-                    android:layout_marginEnd="@dimen/fab_margin"/>
-                <TextView
-                    android:layout_width="@dimen/tableSize"
-                    android:layout_height="wrap_content"
-
-                    android:text="@string/abSaturday"
-                    android:layout_marginEnd="@dimen/fab_margin"/>
-            </TableRow>
-
-            <TableRow
+            <HorizontalScrollView
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:paddingBottom="@dimen/fab_margin">
-
-                <TextView
-                    android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/largeTopSpace"
+                android:paddingTop="@dimen/fab_margin">
+                <TableLayout
                     android:layout_width="wrap_content"
-
-                    android:text="SunTime"
-                    android:id="@+id/sundayTime"
-                    />
-                <TextView
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/mediumText"
+                    android:layout_gravity="center">
 
-                    android:text="MonTime"
-                    android:id="@+id/mondayTime"
-                    />
-                <TextView
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abSunday"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abMonday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abTuesday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abWednesday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abThursday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abFriday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abSaturday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/sundayTime"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/mondayTime"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/tuesdayTime"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/wednesdayTime"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/thursdayTime"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/fridayTime"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/saturdayTime"
+                            />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/largeTopSpace"
+
+                android:text="@string/schedule"
+                android:textStyle="bold"
+                android:textSize="@dimen/medLargText"
+                />
+
+            <HorizontalScrollView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/fab_margin">
+                <TableLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:paddingBottom="@dimen/fab_margin"
+                    android:textSize="@dimen/mediumText"
+                    android:id="@+id/weekSchedule"
+                    android:padding="10dp"
+                    >
 
-                    android:text="TuesTime"
-                    android:id="@+id/tuesdayTime"
-                    />
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-
-                    android:text="WedTime"
-                    android:id="@+id/wednesdayTime"
-                    />
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-
-                    android:text="ThursTime"
-                    android:id="@+id/thursdayTime"
-                    />
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-
-                    android:text="FriTime"
-                    android:id="@+id/fridayTime"
-                    />
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-
-                    android:text="SatTime"
-                    android:id="@+id/saturdayTime"
-                    />
-            </TableRow>
-        </TableLayout>
-    </HorizontalScrollView>
-
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:layout_marginTop="@dimen/largeTopSpace"
-
-        android:text="@string/schedule"
-        android:textStyle="bold"
-        android:textSize="@dimen/medLargText"
-        />
-
-    <HorizontalScrollView
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:paddingTop="@dimen/fab_margin">
-        <TableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/fab_margin"
-            android:textSize="@dimen/mediumText"
-            android:id="@+id/weekSchedule"
-            android:padding="10dp"
-            >
-
-        </TableLayout>
-    </HorizontalScrollView>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

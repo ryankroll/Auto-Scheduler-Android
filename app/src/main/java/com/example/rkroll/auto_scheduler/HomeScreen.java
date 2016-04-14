@@ -205,9 +205,7 @@ public class HomeScreen extends AppCompatActivity {
     private void buildTable(int col, int rows) {
         TextView tv;
         TableRow tr;
-        String day = null;
         String tableBox = null;
-        int dimen = (int) this.getResources().getDimension(R.dimen.tableSize);
 
         for (int i = 1; i <= rows; i++) {
         tr = new TableRow(this);
@@ -218,26 +216,26 @@ public class HomeScreen extends AppCompatActivity {
             tv = new TextView(this);
             tv.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
                             LayoutParams.WRAP_CONTENT));
-            tv.setPadding(5, 5, 30, 5);
+            tv.setPadding(5, 5, 40, 5);
 
                 if (j == 1){
                     switch(i){
-                        case 1: day = "Sun: ";
+                        case 1: tableBox = "Sun: ";
                                 break;
-                        case 2: day = "Mon: ";
+                        case 2: tableBox = "Mon: ";
                                 break;
-                        case 3: day = "Tues: ";
+                        case 3: tableBox = "Tues: ";
                                 break;
-                        case 4: day = "Wed: ";
+                        case 4: tableBox = "Wed: ";
                                break;
-                        case 5: day = "Thurs: ";
+                        case 5: tableBox = "Thurs: ";
                                 break;
-                        case 6: day = "Fri: ";
+                        case 6: tableBox = "Fri: ";
                                 break;
-                        case 7: day = "Sat: ";
+                        case 7: tableBox = "Sat: ";
                                 break;
                     }
-                tv.setText(day);
+                tv.setText(tableBox);
                 }else{
                     tableBox = "R" + i + ", C" + j;
                     tv.setText(tableBox);

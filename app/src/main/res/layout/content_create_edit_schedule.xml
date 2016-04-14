@@ -22,69 +22,42 @@
         android:text="@string/createSched"
         android:layout_gravity="center"
         android:textSize="@dimen/normalText"
+        android:onClick="onClickCreateNewSched"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="@string/editSched"
+        android:text="@string/newSched"
         android:textSize="@dimen/mediumText"
         android:textStyle="bold"
         android:paddingTop="@dimen/xlSpace"
         android:layout_gravity="center"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <HorizontalScrollView
         android:layout_height="wrap_content"
-
-        android:text="@string/sunday"
-        android:textSize="@dimen/normalText"
-        android:textStyle="bold"
-        android:paddingTop="@dimen/fab_margin"
-        />
-
-    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/fab_margin"
-        android:textSize="@dimen/mediumText"
-        android:id="@+id/sunSchedTable"
-        android:padding="10dp">
-    </TableLayout>
+        android:paddingTop="@dimen/fab_margin">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/fab_margin"
+            android:textSize="@dimen/mediumText"
+            android:id="@+id/weekSchedule"
+            android:padding="10dp"
+            >
+
+        </TableLayout>
+    </HorizontalScrollView>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/editDay"
+        android:text="@string/editSched"
         android:layout_gravity="end"
-        android:id="@+id/editSun"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="@string/monday"
-        android:textSize="@dimen/normalText"
-        android:textStyle="bold"
-        android:paddingTop="@dimen/fab_margin"
-        />
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/fab_margin"
-        android:textSize="@dimen/mediumText"
-        android:id="@+id/monSchedTable"
-        android:padding="10dp">
-    </TableLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/editDay"
-        android:layout_gravity="end"
-        android:id="@+id/editMon"/>
+        android:id="@+id/editNewSched"
+        android:onClick="goToEditSched"/>
 
 </LinearLayout>

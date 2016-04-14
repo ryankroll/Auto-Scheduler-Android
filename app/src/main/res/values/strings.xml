@@ -85,8 +85,9 @@
     <string name="createEditSched">Create/Edit Schedule</string>
     <string name="enterHistoryDate">Enter Dates</string>
     <string name="createSched">Create New Schedule</string>
-    <string name="editSched">Edit New Schedule</string>
+    <string name="newSched">New Schedule</string>
     <string name="editDay">Edit Date</string>
+    <string name="editSched">Edit Schedule</string>
 
 
     <string name="sundayOpen">0000</string>
@@ -144,4 +145,5 @@
     <string name="title_activity_avail_request">AvailRequest</string>
     <string name="title_activity_view_manager_avail_change">View Manager Availability Change
     </string>
+    <string name="title_activity_edit_schedule">Edit Schedule</string>
 </resources>

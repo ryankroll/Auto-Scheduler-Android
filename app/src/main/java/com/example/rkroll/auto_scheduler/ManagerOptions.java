@@ -52,7 +52,6 @@ public class ManagerOptions extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         reqListView = (ListView) findViewById(R.id.reqList);
-
         availListView = (ListView) findViewById(R.id.availList);
 
         String[] req = new String[]{"blue", "cyan", "red", "gold", "yellow", "white", "green", "turq"};
