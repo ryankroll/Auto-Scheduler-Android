@@ -53,7 +53,11 @@ public class MakeTimeOffRequest extends AppCompatActivity {
             if ((!(isEmpty(startDateEditText)) || (!(isEmpty(endDateEditText))))) {
                 toast.displayLongToast(getApplicationContext(), "Please enter start and end date");
             } else {
-                saveData();
+                if (ParseUser.getCurrentUser().getBoolean("isManager")){
+                    managerSaveData();
+                } else {
+                    saveData();
+                }
             }
 
         }
@@ -92,5 +96,33 @@ public class MakeTimeOffRequest extends AppCompatActivity {
             });
         }
 
+
+
+    public void managerSaveData() {
+        ParseObject timeOff = new ParseObject("Request_Time_Off_Manager");
+        timeOff.put("userId", ParseUser.getCurrentUser().getObjectId());
+        String tempDate = startDateEditText.getText().toString();
+        date = mDate.parseDate(tempDate, DATEFORMATS);
+        timeOff.put("startDate", date);
+        tempDate = endDateEditText.getText().toString();
+        date = mDate.parseDate(tempDate, DATEFORMATS);
+        timeOff.put("endDate", date);
+        timeOff.put("isApproved", false);
+        timeOff.put("name", ParseUser.getCurrentUser().get("name"));
+        timeOff.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    Log.d("Time-Off", "Save successfull");
+                    toast toast = new toast();
+                    toast.displayLongToast(getApplicationContext(), "Time off request saved");
+
+                } else {
+                    Log.d("Time-Off SAVE ERROR", e.getMessage());
+                }
+            }
+        });
     }
+
+}
 

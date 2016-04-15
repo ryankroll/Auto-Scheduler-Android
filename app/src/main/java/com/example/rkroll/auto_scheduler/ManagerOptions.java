@@ -16,21 +16,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TableRow;
-import android.app.Activity;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 
 import com.google.android.gms.appindexing.Action;
@@ -55,11 +46,6 @@ public class ManagerOptions extends AppCompatActivity {
     private String[] DATEFORMATS = {"MM-dd-yyyy", "MM/dd/yyyy", "MMddyyyy"};
 
     SimpleDateFormatStringToDate mDate = new SimpleDateFormatStringToDate();
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,9 +102,6 @@ public class ManagerOptions extends AppCompatActivity {
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     @Override
@@ -223,9 +206,9 @@ public class ManagerOptions extends AppCompatActivity {
         final TextView endDate = new TextView(this);
         String temp = ("Employee Name: " + object.getString("name"));
         name.setText(temp);
-        temp = ("Start Date: " + mDate.parseDate(object.getDate("startDate"), DATEFORMATS));
+        temp = ("Start Date: " + SimpleDateFormatStringToDate.parseDate(object.getDate("startDate"), DATEFORMATS));
         startDate.setText(temp);
-        temp = ("End Date: " + (mDate.parseDate(object.getDate("endDate"), DATEFORMATS)));
+        temp = ("End Date: " + (SimpleDateFormatStringToDate.parseDate(object.getDate("endDate"), DATEFORMATS)));
         endDate.setText(temp);
         layout.addView(name);
         layout.addView(startDate);

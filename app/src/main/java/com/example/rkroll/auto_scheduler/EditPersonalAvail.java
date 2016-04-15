@@ -60,6 +60,7 @@ public class EditPersonalAvail extends AppCompatActivity {
 
     ParseObject avail_Request = new ParseObject("Request_Availability");
     ParseObject current_Avail = new ParseObject("Availability");
+    ParseObject manager_Avail_Request = new ParseObject("Request_Availability_Manager");
 
     private Button saveButton;
 
@@ -129,6 +130,102 @@ public class EditPersonalAvail extends AppCompatActivity {
     private final View.OnClickListener saveButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
+            if (ParseUser.getCurrentUser().getBoolean("isManager")) {
+                managerAvailRequest();
+            } else {
+                availRequest();
+            }
+
+        }
+    };
+
+        public void managerAvailRequest() {
+            int temp;
+
+            if ((isEmpty(sundayStartEditText))) {
+                temp = Integer.parseInt(sundayStartEditText.getText().toString());
+                manager_Avail_Request.put("sundayStartTime", temp);
+            }
+            if ((isEmpty(sundayEndEditText))) {
+                temp = Integer.parseInt(sundayEndEditText.getText().toString());
+                manager_Avail_Request.put("sundayEndTime", temp);
+            }
+            if ((isEmpty(mondayStartEditText))) {
+                temp = Integer.parseInt(mondayStartEditText.getText().toString());
+                manager_Avail_Request.put("mondayStartTime", temp);
+            }
+
+            if ((isEmpty(mondayEndEditText))) {
+                temp = Integer.parseInt(mondayEndEditText.getText().toString());
+                manager_Avail_Request.put("mondayEndTime", temp);
+            }
+            if ((isEmpty(tuesdayStartEditText))) {
+                temp = Integer.parseInt(tuesdayStartEditText.getText().toString());
+                manager_Avail_Request.put("tuesdayStartTime", temp);
+            }
+            if ((isEmpty(tuesdayEndEditText))) {
+                temp = Integer.parseInt(tuesdayEndEditText.getText().toString());
+                manager_Avail_Request.put("tuesdayEndTime", temp);
+            }
+            if ((isEmpty(wednesdayStartEditText))) {
+                temp = Integer.parseInt(wednesdayStartEditText.getText().toString());
+                manager_Avail_Request.put("wednesdayStartTime", temp);
+            }
+            if ((isEmpty(wednesdayEndEditText))) {
+                temp = Integer.parseInt(wednesdayEndEditText.getText().toString());
+                manager_Avail_Request.put("wednesdayEndTime", temp);
+            }
+            if ((isEmpty(thursdayStartEditText))) {
+                temp = Integer.parseInt(thursdayStartEditText.getText().toString());
+                manager_Avail_Request.put("thursdayStartTime", temp);
+            }
+            if ((isEmpty(thursdayEndEditText))) {
+                temp = Integer.parseInt(thursdayEndEditText.getText().toString());
+                manager_Avail_Request.put("thursdayEndTime", temp);
+            }
+            if ((isEmpty(fridayStartEditText))) {
+                temp = Integer.parseInt(fridayStartEditText.getText().toString());
+                manager_Avail_Request.put("fridayStartTime", temp);
+            }
+            if ((isEmpty(fridayEndEditText))) {
+                temp = Integer.parseInt(fridayEndEditText.getText().toString());
+                manager_Avail_Request.put("fridayEndTime", temp);
+            }
+            if ((isEmpty(saturdayStartEditText))) {
+                temp = Integer.parseInt(saturdayStartEditText.getText().toString());
+                manager_Avail_Request.put("saturdayStartTime", temp);
+            }
+            if ((isEmpty(saturdayEndEditText))) {
+                temp = Integer.parseInt(saturdayEndEditText.getText().toString());
+                manager_Avail_Request.put("saturdayEndTime", temp);
+            }
+
+            String eDate = effectiveDate.getText().toString();
+            if (eDate.isEmpty()) {
+                fillOutField();
+            } else {
+                date = mDate.parseDate(eDate, DATEFORMATS);
+                manager_Avail_Request.put("effectiveDate", date);
+            }
+            manager_Avail_Request.put("userId", currentUser.getObjectId());
+            manager_Avail_Request.put("name", currentUser.get("name"));
+
+
+            manager_Avail_Request.saveInBackground(new SaveCallback() {
+                @Override
+                public void done(ParseException e) {
+                    if (e == null) {
+                        Log.d("Object Save: ", "Success");
+                    } else {
+                        Log.d("Exception", e.getMessage());
+                    }
+                }
+            });
+
+        }
+
+        public void availRequest() {
             int temp;
 
             if ((isEmpty(sundayStartEditText))) {
@@ -144,7 +241,7 @@ public class EditPersonalAvail extends AppCompatActivity {
                 avail_Request.put("mondayStartTime", temp);
             }
 
-            if ((isEmpty(mondayEndEditText ))) {
+            if ((isEmpty(mondayEndEditText))) {
                 temp = Integer.parseInt(mondayEndEditText.getText().toString());
                 avail_Request.put("mondayEndTime", temp);
             }
@@ -199,57 +296,60 @@ public class EditPersonalAvail extends AppCompatActivity {
             avail_Request.put("userId", currentUser.getObjectId());
             avail_Request.put("name", currentUser.get("name"));
 
+
             avail_Request.saveInBackground(new SaveCallback() {
                 @Override
                 public void done(ParseException e) {
                     if (e == null) {
                         Log.d("Object Save: ", "Success");
                     } else {
-                        Log.d("Exception: ", e.getMessage());
+                        Log.d("Exception", e.getMessage());
                     }
                 }
             });
 
         }
-    };
 
 
-    public void objectRetrievalSuccessful(ParseObject object) {
-        displayStoreHours(object);
-        current_Avail.equals(object);
-        Log.d("Object Retreival:", "Successful");
+        public void objectRetrievalSuccessful(ParseObject object) {
+            displayStoreHours(object);
+            current_Avail.equals(object);
+            Log.d("Object Retreival:", "Successful");
+        }
+
+        public void displayStoreHours(ParseObject object) {
+            sundayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("sundayStartTime")));
+            sundayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("sundayEndTime")));
+            mondayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("mondayStartTime")));
+            mondayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("mondayEndTime")));
+            tuesdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
+                    ("tuesdayStartTime")));
+            tuesdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("tuesdayEndTime")));
+            wednesdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
+                    ("wednesdayStartTime")));
+            wednesdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("wednesdayEndTime")));
+            thursdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
+                    ("thursdayStartTime")));
+            thursdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("thursdayEndTime")));
+            fridayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("fridayStartTime")));
+            fridayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("fridayEndTime")));
+            saturdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
+                    ("saturdayStartTime")));
+            saturdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("saturdayEndTime")));
+        }
+
+        private boolean isEmpty(EditText etText) {
+            return (etText.getText().toString().trim().length() > 0);
+        }
+
+        public void fillOutField() {
+            toast toast = new toast();
+            toast.displayLongToast(getApplicationContext(), "Please fill out the effective date.");
+
+        }
     }
 
-    public void displayStoreHours(ParseObject object) {
-        sundayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("sundayStartTime")));
-        sundayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("sundayEndTime")));
-        mondayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("mondayStartTime")));
-        mondayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("mondayEndTime")));
-        tuesdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
-                ("tuesdayStartTime")));
-        tuesdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("tuesdayEndTime")));
-        wednesdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
-                ("wednesdayStartTime")));
-        wednesdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("wednesdayEndTime")));
-        thursdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
-                ("thursdayStartTime")));
-        thursdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("thursdayEndTime")));
-        fridayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("fridayStartTime")));
-        fridayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("fridayEndTime")));
-        saturdayStartTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt
-                ("saturdayStartTime")));
-        saturdayEndTextView.setText(String.format(Locale.getDefault(), "%04d", object.getInt("saturdayEndTime")));
-    }
 
-    private boolean isEmpty(EditText etText) {
-        return (etText.getText().toString().trim().length() > 0);
-    }
 
-    public void fillOutField() {
-        toast toast = new toast();
-        toast.displayLongToast(getApplicationContext(), "Please fill out the effective date.");
-
-    }
-}
 
 
