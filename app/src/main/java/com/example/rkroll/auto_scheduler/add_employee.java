@@ -217,6 +217,7 @@ public class add_employee extends AppCompatActivity {
     public  void setAvailability() {
         ParseUser currentUser = ParseUser.getCurrentUser();
         ParseObject a = new ParseObject("Availability");
+        a.put("name", currentUser.get("name"));
         a.put("userId", currentUser.getObjectId());
         a.put("sundayStartTime", defaultStartAvailability);
         a.put("sundayEndTime", defaultEndAvailability);

@@ -16,8 +16,6 @@
     <string name="emailLabel">Email:</string>
     <string name="phoneNumberLabel">Phone Number:</string>
     <string name="numberHint">Enter Phone Number</string>
-    <string name="accept">Accept Change</string>
-    <string name="deny">Reject Change</string>
 
     <string name="profile_title_logged_in">You are logged in as</string>
     <string name="profile_logout_button_label">Log out</string>
@@ -142,6 +140,8 @@
     <string name="effectiveDate">Effective Date: </string>
     <string name="editEffectiveDate">Enter effective date</string>
     <string name="title_activity_manager_options">Manager Options</string>
+    <string name="deny">Deny</string>
+    <string name="approve">Approve</string>
     <string name="title_activity_avail_request">AvailRequest</string>
     <string name="title_activity_view_manager_avail_change">View Manager Availability Change
     </string>

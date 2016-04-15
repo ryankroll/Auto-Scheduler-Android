@@ -38,7 +38,6 @@ public class EditPersonalInfo extends AppCompatActivity {
         String empEmail = intent.getStringExtra("EXTRA_EMP_EMAIL");
         String empPhoneNumber = intent.getStringExtra("EXTRA_EMP_PHONENUMBER");
 
-
         emailEditText = ((EditText) findViewById(R.id.editEmail));
         phoneNumberEditText = ((EditText) findViewById(R.id.editPhoneNumber));
         empEmailTextView = (TextView) findViewById(R.id.currentEmail);

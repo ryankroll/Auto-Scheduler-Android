@@ -74,7 +74,9 @@ public class MakeTimeOffRequest extends AppCompatActivity {
             timeOff.put("startDate", date);
             tempDate = endDateEditText.getText().toString();
             date = mDate.parseDate(tempDate, DATEFORMATS);
+            timeOff.put("endDate", date);
             timeOff.put("isApproved", false);
+            timeOff.put("name", ParseUser.getCurrentUser().get("name"));
             timeOff.saveInBackground(new SaveCallback() {
                 @Override
                 public void done(ParseException e) {

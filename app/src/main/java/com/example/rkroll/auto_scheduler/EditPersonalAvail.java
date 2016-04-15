@@ -197,6 +197,7 @@ public class EditPersonalAvail extends AppCompatActivity {
                 avail_Request.put("effectiveDate", date);
             }
             avail_Request.put("userId", currentUser.getObjectId());
+            avail_Request.put("name", currentUser.get("name"));
 
             avail_Request.saveInBackground(new SaveCallback() {
                 @Override

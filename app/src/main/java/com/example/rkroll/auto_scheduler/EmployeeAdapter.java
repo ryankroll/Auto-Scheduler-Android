@@ -61,6 +61,7 @@ public class EmployeeAdapter
 
         // create a ViewHolder for current item
         return (new ViewHolder(view, longClickListener));
+
     }
 
     // sets the text of the list item to display the search tag
