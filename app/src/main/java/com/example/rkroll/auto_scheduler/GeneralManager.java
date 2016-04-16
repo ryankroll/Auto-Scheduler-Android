@@ -78,6 +78,11 @@ public class GeneralManager extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.logout){
+
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

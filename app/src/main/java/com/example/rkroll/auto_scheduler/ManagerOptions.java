@@ -165,6 +165,13 @@ public class ManagerOptions extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+
+        // logout if associated button is pressed
+        if (id == R.id.logout){
+
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

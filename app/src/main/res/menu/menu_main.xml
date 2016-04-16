@@ -18,4 +18,9 @@
         android:orderInCategory="100"
         android:title="@string/userScreen"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="@string/profile_logout_button_label"
+        app:showAsAction="never"/>
 </menu>
