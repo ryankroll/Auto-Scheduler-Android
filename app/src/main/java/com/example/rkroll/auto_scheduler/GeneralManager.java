@@ -21,13 +21,16 @@ import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 import com.parse.ParseUser;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
 public class GeneralManager extends AppCompatActivity {
 
-    private static final String EMPLOYEES = "Employees";
+    private static final String[] EMPLOYEES =  new String[]{"Employees Names"};
+    private ArrayAdapter<String> arrayAdapter;
 
     private String LIST_STATE_KEY;
 
@@ -39,6 +42,16 @@ public class GeneralManager extends AppCompatActivity {
         setContentView(R.layout.activity_general_manager);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        empListView = (ListView) findViewById(R.id.empList);
+        ArrayList<String> empList = new ArrayList<>();
+
+        empList.addAll(Arrays.asList(EMPLOYEES));
+
+        arrayAdapter = new ArrayAdapter<String>(this, R.layout.list_row, empList);
+
+        empListView.setAdapter(arrayAdapter);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
