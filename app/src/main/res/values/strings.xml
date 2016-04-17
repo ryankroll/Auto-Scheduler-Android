@@ -1,4 +1,7 @@
 <resources>
+    <string name="applicaiton_Id">sSiWoPC0K4HzqLziBI6JXDtOgu0AQrj3UYhFfZ3l</string>
+    <string name="client_Key">MD9y8cCJqgkdrIuiZCVFDKrwU7Zmg98TfQcm36Sd</string>
+
     <string name="app_name">Auto-Scheduler</string>
     <string name="action_settings">General Manager</string>
     <string name="man_settings">Manager</string>

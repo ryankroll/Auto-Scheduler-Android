@@ -125,7 +125,9 @@ public class UserOptions extends AppCompatActivity {
         }
 
         if (id == R.id.logout){
-
+            ParseUser.logOut();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
             return true;
         }
 
@@ -188,9 +190,6 @@ public class UserOptions extends AppCompatActivity {
         } else {
             empPos.setText("Part-Time");
         }
-
-
-
 
     }
 

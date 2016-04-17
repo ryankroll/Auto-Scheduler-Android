@@ -33,6 +33,7 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
+import com.parse.ParseUser;
 
 public class ManagerOptions extends AppCompatActivity {
 
@@ -168,7 +169,9 @@ public class ManagerOptions extends AppCompatActivity {
 
         // logout if associated button is pressed
         if (id == R.id.logout){
-
+            ParseUser.logOut();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
             return true;
         }
 

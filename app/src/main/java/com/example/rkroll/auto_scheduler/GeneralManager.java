@@ -92,7 +92,9 @@ public class GeneralManager extends AppCompatActivity {
         }
 
         if (id == R.id.logout){
-
+            ParseUser.logOut();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
             return true;
         }
 

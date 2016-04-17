@@ -34,7 +34,7 @@ public class HomeScreen extends AppCompatActivity {
     ParseObject temp = new ParseObject("Schedule");
     toast t = new toast();
 
-    private static String notScheduled = "N/A";
+    private static String notScheduled = "N/A - N/A";
 
     private TextView sundayStartTextView;
     private TextView sundayEndTextView;
@@ -138,7 +138,9 @@ public class HomeScreen extends AppCompatActivity {
         }
 
         if (id == R.id.logout){
-
+            ParseUser.logOut();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);
