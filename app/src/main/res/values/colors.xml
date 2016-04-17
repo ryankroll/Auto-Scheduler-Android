@@ -5,5 +5,5 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="inputHighlights">#FFFFF0</color>
-    <color name="listHighlights">#dcdcdc</color>
+    <color name="listHighlights">#ececec</color>
 </resources>

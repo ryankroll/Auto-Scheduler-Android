@@ -66,6 +66,26 @@ public class EditSchedule extends AppCompatActivity {
         satListView.setAdapter(satAdapter);
 
 
+//        reqListView = (ListView) findViewById(R.id.reqList);
+//        reqListView.setAdapter(requestMainAdapter);
+//        requestMainAdapter.loadObjects();
+//        reqListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                ParseObject request = requestMainAdapter.getItem(position);
+//                ParseQuery<ParseObject> query = ParseQuery.getQuery("Request_Time_Off");
+//                query.getInBackground(request.getObjectId(),new GetCallback<ParseObject>() {
+//                    @Override
+//                    public void done(ParseObject object, ParseException e) {
+//                        if (e == null) {
+//                            approveTimeOff(object);
+//                        } else {
+//                            Log.d("Retrieval Failed", e.getMessage());
+//                        }
+//                    }
+//                });
+//            }
+//        });
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

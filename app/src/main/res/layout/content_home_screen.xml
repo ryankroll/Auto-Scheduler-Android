@@ -183,8 +183,8 @@
                     android:textSize="@dimen/mediumText"
                     android:id="@+id/weekSchedule"
                     android:padding="10dp"
+                    android:layout_gravity="center"
                     >
-
                 </TableLayout>
             </HorizontalScrollView>
         </LinearLayout>

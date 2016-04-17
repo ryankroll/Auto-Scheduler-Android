@@ -32,14 +32,14 @@
 
                     android:text="@string/sunday"
                     android:textSize="@dimen/mediumText"
-                    android:textStyle="bold"
-                    android:layout_gravity="center">
+                    android:textStyle="bold">
 
                 </TextView>
 
                 <ListView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+
                     android:paddingBottom="@dimen/fab_margin"
                     android:id="@+id/sunListView"
                     android:padding="10dp"
@@ -57,8 +57,7 @@
 
                     android:text="@string/monday"
                     android:textSize="@dimen/mediumText"
-                    android:textStyle="bold"
-                    android:layout_gravity="center">
+                    android:textStyle="bold">
 
                 </TextView>
 
@@ -83,8 +82,7 @@
 
                     android:text="@string/tuesday"
                     android:textSize="@dimen/mediumText"
-                    android:textStyle="bold"
-                    android:layout_gravity="center">
+                    android:textStyle="bold">
 
                 </TextView>
 
@@ -109,8 +107,7 @@
 
                     android:text="@string/wednesday"
                     android:textSize="@dimen/mediumText"
-                    android:textStyle="bold"
-                    android:layout_gravity="center">
+                    android:textStyle="bold">
 
                 </TextView>
 
@@ -135,8 +132,7 @@
 
                     android:text="@string/thursday"
                     android:textSize="@dimen/mediumText"
-                    android:textStyle="bold"
-                    android:layout_gravity="center">
+                    android:textStyle="bold">
 
                 </TextView>
 
@@ -161,8 +157,7 @@
 
                     android:text="@string/friday"
                     android:textSize="@dimen/mediumText"
-                    android:textStyle="bold"
-                    android:layout_gravity="center">
+                    android:textStyle="bold">
 
                 </TextView>
 
@@ -187,8 +182,7 @@
 
                     android:text="@string/saturday"
                     android:textSize="@dimen/mediumText"
-                    android:textStyle="bold"
-                    android:layout_gravity="center">
+                    android:textStyle="bold">
 
                 </TextView>
 
@@ -201,10 +195,6 @@
                     android:background="@color/listHighlights">
                 </ListView>
             </LinearLayout>
-
-
-
-
         </LinearLayout>
     </HorizontalScrollView>
 </LinearLayout>

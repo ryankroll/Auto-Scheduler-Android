@@ -52,7 +52,8 @@ public class HomeScreen extends AppCompatActivity {
     private TextView saturdayEndTextView;
 
     TableLayout tableLayout;
-    int daysOfWeek = 7;
+    private int daysOfWeekPlus1 = 8;
+    private int numWorkersForWeek = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +62,7 @@ public class HomeScreen extends AppCompatActivity {
         tableLayout = (TableLayout) findViewById(R.id.weekSchedule);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        buildTable(7,daysOfWeek);
+        buildTable(daysOfWeekPlus1, numWorkersForWeek);
 
         setSupportActionBar(toolbar);
 
@@ -135,6 +136,11 @@ public class HomeScreen extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+
+        if (id == R.id.logout){
+
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -203,41 +209,50 @@ public class HomeScreen extends AppCompatActivity {
     }
 
     private void buildTable(int col, int rows) {
-        TextView tv;
-        TableRow tr;
+        TextView tv = null;
+        TableRow tr = null;
         String tableBox = null;
 
         for (int i = 1; i <= rows; i++) {
         tr = new TableRow(this);
         tr.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
-                        LayoutParams.WRAP_CONTENT));
+                LayoutParams.WRAP_CONTENT));
 
             for (int j = 1; j <= col; j++) {
             tv = new TextView(this);
             tv.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
-                            LayoutParams.WRAP_CONTENT));
+                    LayoutParams.WRAP_CONTENT));
             tv.setPadding(5, 5, 40, 5);
 
-                if (j == 1){
-                    switch(i){
-                        case 1: tableBox = "Sun: ";
+                if (i >= 2 && j >= 2){
+                    // input times for working during the week
+                    // when j = 2 day is sunday / j = 8 day is Saturday etc.
+                    tableBox = "R" + i + ", C" + j;
+                    tv.setText(tableBox);
+                }else if (i == 1 && j >= 2){
+                    switch(j){
+                        case 2: tableBox = "Sunday";
                                 break;
-                        case 2: tableBox = "Mon: ";
+                        case 3: tableBox = "Monday";
                                 break;
-                        case 3: tableBox = "Tues: ";
+                        case 4: tableBox = "Tuesday";
                                 break;
-                        case 4: tableBox = "Wed: ";
+                        case 5: tableBox = "Wednesday";
                                break;
-                        case 5: tableBox = "Thurs: ";
+                        case 6: tableBox = "Thursday";
                                 break;
-                        case 6: tableBox = "Fri: ";
+                        case 7: tableBox = "Friday";
                                 break;
-                        case 7: tableBox = "Sat: ";
+                        case 8: tableBox = "Saturday";
                                 break;
                     }
-                tv.setText(tableBox);
+                    tv.setText(tableBox);
+                }else if (j == 1 && i >= 2) {
+                    //  input code to get username of employee and set it to tableBox
+                    tableBox = "username";
+                    tv.setText(tableBox);
                 }else{
-                    tableBox = "R" + i + ", C" + j;
+                    tableBox = "Employee | Week";
                     tv.setText(tableBox);
                 }
                 tr.addView(tv);
@@ -246,6 +261,5 @@ public class HomeScreen extends AppCompatActivity {
 
             tableLayout.addView(tr);
         } // End of first for loop
-   }
-
+    }
 }
