@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Parse.initialize(this);
         Parse.setLogLevel(Parse.LOG_LEVEL_DEBUG);
         setContentView(R.layout.content_main);
 
