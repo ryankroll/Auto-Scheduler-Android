@@ -282,7 +282,7 @@ public class ViewManagerAvailChange extends AppCompatActivity {
         return (s.equals("0000 - 0000"));
     }
 
-    public boolean isEmpty(Number s) {
+    public boolean isEmpty(int s) {
         return (s == 0);
     }
 

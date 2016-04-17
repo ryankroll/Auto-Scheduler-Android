@@ -214,15 +214,15 @@ public class HomeScreen extends AppCompatActivity {
         String tableBox = null;
 
         for (int i = 1; i <= rows; i++) {
-        tr = new TableRow(this);
-        tr.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
+            tr = new TableRow(this);
+            tr.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
                 LayoutParams.WRAP_CONTENT));
 
             for (int j = 1; j <= col; j++) {
-            tv = new TextView(this);
-            tv.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
-                    LayoutParams.WRAP_CONTENT));
-            tv.setPadding(5, 5, 40, 5);
+                tv = new TextView(this);
+                tv.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
+                        LayoutParams.WRAP_CONTENT));
+                tv.setPadding(5, 5, 40, 5);
 
                 if (i >= 2 && j >= 2){
                     // input times for working during the week
