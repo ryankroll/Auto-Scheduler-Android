@@ -185,6 +185,963 @@
                     android:padding="10dp"
                     android:layout_gravity="center"
                     >
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abSunday"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abMonday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abTuesday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abWednesday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abThursday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abFriday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                        <TextView
+                            android:layout_width="@dimen/tableSize"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/abSaturday"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/fab_margin"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e1Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e1ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e1MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e1TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e1WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e1HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e1FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e1SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e2Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e2ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e2MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e2TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e2WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e2HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e2FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e2SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e3Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e3ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e3MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e3TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e3WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e3HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e3FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e3SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e4Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e4ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e4MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e4TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e4WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e4HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e4FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e4SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e5Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e5ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e5MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e5TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e5WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e5HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e5FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e5SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e6Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e6ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e6MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e6TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e6WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e6HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e6FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e6SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e7Name"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e7ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e7MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e7TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e7WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e7HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e7FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e7SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e8Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e8ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e8MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e8TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e8WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e8HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e8FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e8SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e9Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e9ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e9MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e9TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e9WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e9HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e9FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e9SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e10Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e10ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e10MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e10TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e10WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e10HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e10FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e10SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e11Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e11ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e11MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e11TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e11WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e11HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e11FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e11SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e12Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e12ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e12MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e12TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e12WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e12HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e12FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e12SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e13Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e13ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e13MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e13TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e13WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e13HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e13FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e13SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e14Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e14ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e14MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e14TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e14WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e14HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e14FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e14SAT"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingBottom="@dimen/fab_margin">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="Name"
+                            android:id="@+id/e15Name"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SunTime"
+                            android:id="@+id/e15ST"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="MonTime"
+                            android:id="@+id/e15MT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="TuesTime"
+                            android:id="@+id/e15TT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="WedTime"
+                            android:id="@+id/e15WT"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="ThursTime"
+                            android:id="@+id/e15HT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="FriTime"
+                            android:id="@+id/e15FT"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:text="SatTime"
+                            android:id="@+id/e15SAT"
+                            />
+                    </TableRow>
                 </TableLayout>
             </HorizontalScrollView>
         </LinearLayout>
