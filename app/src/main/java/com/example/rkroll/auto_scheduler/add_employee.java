@@ -1,9 +1,8 @@
 package com.example.rkroll.auto_scheduler;
 
 import android.content.Context;
-import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
@@ -12,15 +11,11 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
-import com.parse.ParseSession;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
-
-import com.example.rkroll.auto_scheduler.SimpleDateFormatStringToDate;
 
 import java.util.Date;
 
@@ -88,7 +83,7 @@ public class add_employee extends AppCompatActivity {
                 user.setUsername(username);
             }
             String password = passwordEditText.getText().toString();
-            if(password.isEmpty()) {
+            if (password.isEmpty()) {
                 fillOutField();
             } else {
                 user.setPassword(password);
@@ -125,12 +120,11 @@ public class add_employee extends AppCompatActivity {
             } else {
                 user.put("phoneNumber", phoneNumber);
             }
-            if (m && gm)
-            {
+            if (m && gm) {
                 toast toast = new toast();
                 toast.displayLongToast(getApplicationContext(), "Please only select manager or " +
                         "general manager");
-            } else if (m){
+            } else if (m) {
                 user.put("isManager", m);
                 user.signUpInBackground(new SignUpCallback() {
                     @Override
@@ -168,20 +162,7 @@ public class add_employee extends AppCompatActivity {
                 });
             }
 
-            /*Log.d("Session Token", userSession);
-
-            ParseUser.becomeInBackground("userSession", new LogInCallback() {
-                @Override
-                public void done(ParseUser user, ParseException e) {
-                    if (user != null) {
-                        Log.d("User", currentUser.getUsername());
-                    } else {
-                        Log.d("Token", "could not be validated");
-                    }
-                }
-            });*/
-
-            }
+        }
 
     };
 
@@ -196,7 +177,7 @@ public class add_employee extends AppCompatActivity {
 
     }
 
-    public void onCheckBoxClicked (View view) {
+    public void onCheckBoxClicked(View view) {
         boolean checked = ((CheckBox) view).isChecked();
         switch (view.getId()) {
             case R.id.Manager:
@@ -214,7 +195,8 @@ public class add_employee extends AppCompatActivity {
                 break;
         }
     }
-    public  void setAvailability() {
+
+    public void setAvailability() {
         ParseUser currentUser = ParseUser.getCurrentUser();
         ParseObject a = new ParseObject("Availability");
         a.put("name", currentUser.get("name"));
@@ -241,7 +223,7 @@ public class add_employee extends AppCompatActivity {
             public void done(ParseException e) {
                 if (e == null) {
                     Log.d("Availability", "Saved successfully");
-                } else{
+                } else {
                     Log.d("Failure", e.getMessage());
                 }
             }

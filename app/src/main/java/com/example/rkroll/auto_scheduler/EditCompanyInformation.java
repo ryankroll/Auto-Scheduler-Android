@@ -57,7 +57,7 @@ public class EditCompanyInformation extends AppCompatActivity {
                 if (e == null) {
                     objectRetrievalSuccessful(object);
                 } else {
-                    objectRetreivalFailed();
+                    objectRetrievalFailed();
                 }
             }
 
@@ -94,7 +94,7 @@ public class EditCompanyInformation extends AppCompatActivity {
         currentCompany = object;
     }
 
-    public void objectRetreivalFailed() {
+    public void objectRetrievalFailed() {
 
     }
 
