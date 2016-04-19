@@ -130,7 +130,10 @@ public class AvailRequest extends AppCompatActivity {
                 @Override
                 public void done(ParseObject object, ParseException e) {
                     if (e == null) {
-                        //approvedAvailChange(object);
+                        object.deleteInBackground();
+                        toast toast = new toast();
+                        toast.displayLongToast(getApplicationContext(), "Availability change " +
+                                "approved");
                     } else {
                         Log.d("Retrieval Failed", e.getMessage());
                     }
