@@ -58,7 +58,8 @@
             android:label="@string/addEmployee"
             android:parentActivityName=".GeneralManager"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.GeneralManager"/>
@@ -68,7 +69,8 @@
             android:label="@string/title_activity_company_information"
             android:parentActivityName=".GeneralManager"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.GeneralManager"/>
@@ -78,7 +80,8 @@
             android:label="@string/title_activity_edit_store_hours"
             android:parentActivityName=".CompanyInformation"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.CompanyInformation"/>
@@ -88,7 +91,8 @@
             android:label="@string/title_activity_edit_company_information"
             android:parentActivityName=".CompanyInformation"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.CompanyInformation"/>
@@ -96,13 +100,15 @@
         <activity
             android:name=".HomeScreen"
             android:label="@string/title_activity_home_screen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".GeneralManager"
             android:label="@string/title_activity_general_manager"
             android:parentActivityName=".HomeScreen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.HomeScreen"/>
@@ -111,7 +117,8 @@
             android:name=".ViewEmployeeInfo"
             android:label="@string/title_activity_view_employee_info"
             android:parentActivityName=".GeneralManager"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.GeneralManager"/>
@@ -120,7 +127,8 @@
             android:name=".ViewManagerRequests"
             android:label="@string/title_activity_view_manager_requests"
             android:parentActivityName=".GeneralManager"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.GeneralManager"/>
@@ -129,7 +137,8 @@
             android:name=".UserOptions"
             android:label="@string/title_activity_user_options"
             android:parentActivityName=".HomeScreen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.HomeScreen"/>
@@ -138,7 +147,8 @@
             android:name=".EditPersonalInfo"
             android:label="@string/title_activity_edit_personal_info"
             android:parentActivityName=".UserOptions"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.UserOptions"/>
@@ -147,7 +157,8 @@
             android:name=".EditPersonalAvail"
             android:label="@string/title_activity_edit_personal_avail"
             android:parentActivityName=".UserOptions"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.UserOptions"/>
@@ -156,7 +167,8 @@
             android:name=".MakeTimeOffRequest"
             android:label="@string/title_activity_make_time_off_request"
             android:parentActivityName=".UserOptions"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.UserOptions"/>
@@ -165,7 +177,8 @@
             android:name=".CreateEditSchedule"
             android:label="@string/title_activity_create_edit_schedule"
             android:parentActivityName=".ManagerOptions"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.ManagerOptions"/>
@@ -174,7 +187,8 @@
             android:name=".ScheduleHistory"
             android:label="@string/title_activity_schedule_history"
             android:parentActivityName=".ManagerOptions"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.ManagerOptions"/>
@@ -183,7 +197,8 @@
             android:name=".ManagerOptions"
             android:label="@string/title_activity_manager_options"
             android:parentActivityName=".HomeScreen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.HomeScreen"/>
@@ -192,7 +207,8 @@
             android:name=".AvailRequest"
             android:label="@string/title_activity_avail_request"
             android:parentActivityName=".ManagerOptions"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.ManagerOptions"/>
@@ -201,7 +217,8 @@
             android:name=".ViewManagerAvailChange"
             android:label="@string/title_activity_view_manager_avail_change"
             android:parentActivityName=".ViewManagerRequests"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.ViewManagerRequests"/>
@@ -210,7 +227,8 @@
             android:name=".EditSchedule"
             android:label="@string/title_activity_edit_schedule"
             android:parentActivityName=".CreateEditSchedule"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkroll.auto_scheduler.CreateEditSchedule"/>
