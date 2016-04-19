@@ -29,7 +29,7 @@ import java.util.List;
 
 public class GeneralManager extends AppCompatActivity {
 
-    private static final String[] EMPLOYEES =  new String[]{"Employees Names"};
+    private static final String[] EMPLOYEES =  new String[]{"M M", "Z Z", "V V", "Troy T", "Steve S", "G G", "E E", "R R", "Ryan R", "Brian B", "c", "b", "t1", "test", "Ryan Kroll"};
     private ArrayAdapter<String> arrayAdapter;
 
     private String LIST_STATE_KEY;

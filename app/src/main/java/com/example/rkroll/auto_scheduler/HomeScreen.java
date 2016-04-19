@@ -554,7 +554,7 @@ public class HomeScreen extends AppCompatActivity {
         e2fridayStartTextView.setText("1000 - 1700");
         e2saturdayStartTextView.setText("1400- 2200");
 
-        e3Emp.setText("new");
+        e3Emp.setText("M M");
         e3sundayStartTextView.setText("1500 - 2200");
         e3mondayStartTextView.setText("0800 - 1300");
         e3tuesdayStartTextView.setText("0800 - 1300");
@@ -563,7 +563,7 @@ public class HomeScreen extends AppCompatActivity {
         e3fridayStartTextView.setText("1000 - 1700");
         e3saturdayStartTextView.setText("1400- 2200");
 
-        e4Emp.setText("new");
+        e4Emp.setText("Z Z");
         e4sundayStartTextView.setText("1500 - 2200");
         e4mondayStartTextView.setText("0800 - 1300");
         e4tuesdayStartTextView.setText("0800 - 1300");
@@ -572,7 +572,7 @@ public class HomeScreen extends AppCompatActivity {
         e4fridayStartTextView.setText("1000 - 1700");
         e4saturdayStartTextView.setText("1400- 2200");
 
-        e5Emp.setText("new");
+        e5Emp.setText("V V");
         e5sundayStartTextView.setText("1500 - 2200");
         e5mondayStartTextView.setText("0800 - 1300");
         e5tuesdayStartTextView.setText("0800 - 1300");
@@ -581,7 +581,7 @@ public class HomeScreen extends AppCompatActivity {
         e5fridayStartTextView.setText("1000 - 1700");
         e5saturdayStartTextView.setText("1400- 2200");
 
-        e6Emp.setText("new");
+        e6Emp.setText("Troy T");
         e6sundayStartTextView.setText("1500 - 2200");
         e6mondayStartTextView.setText("0800 - 1300");
         e6tuesdayStartTextView.setText("0800 - 1300");
@@ -590,7 +590,7 @@ public class HomeScreen extends AppCompatActivity {
         e6fridayStartTextView.setText("1000 - 1700");
         e6saturdayStartTextView.setText("1400- 2200");
 
-        e7Emp.setText("new");
+        e7Emp.setText("Steve S");
         e7sundayStartTextView.setText("1500 - 2200");
         e7mondayStartTextView.setText("0800 - 1300");
         e7tuesdayStartTextView.setText("0800 - 1300");
@@ -599,7 +599,7 @@ public class HomeScreen extends AppCompatActivity {
         e7fridayStartTextView.setText("1000 - 1700");
         e7saturdayStartTextView.setText("1400- 2200");
 
-        e8Emp.setText("new");
+        e8Emp.setText("G G");
         e8sundayStartTextView.setText("1500 - 2200");
         e8mondayStartTextView.setText("0800 - 1300");
         e8tuesdayStartTextView.setText("0800 - 1300");
@@ -608,7 +608,7 @@ public class HomeScreen extends AppCompatActivity {
         e8fridayStartTextView.setText("1000 - 1700");
         e8saturdayStartTextView.setText("1400- 2200");
 
-        e9Emp.setText("new");
+        e9Emp.setText("E E");
         e9sundayStartTextView.setText("1500 - 2200");
         e9mondayStartTextView.setText("0800 - 1300");
         e9tuesdayStartTextView.setText("0800 - 1300");
@@ -617,7 +617,7 @@ public class HomeScreen extends AppCompatActivity {
         e9fridayStartTextView.setText("1000 - 1700");
         e9saturdayStartTextView.setText("1400- 2200");
 
-        e10Emp.setText("new");
+        e10Emp.setText("R R");
         e10sundayStartTextView.setText("1500 - 2200");
         e10mondayStartTextView.setText("0800 - 1300");
         e10tuesdayStartTextView.setText("0800 - 1300");
@@ -626,7 +626,7 @@ public class HomeScreen extends AppCompatActivity {
         e10fridayStartTextView.setText("1000 - 1700");
         e10saturdayStartTextView.setText("1400- 2200");
 
-        e11Emp.setText("new");
+        e11Emp.setText("Ryan R");
         e11sundayStartTextView.setText("1500 - 2200");
         e11mondayStartTextView.setText("0800 - 1300");
         e11tuesdayStartTextView.setText("0800 - 1300");
@@ -635,7 +635,7 @@ public class HomeScreen extends AppCompatActivity {
         e11fridayStartTextView.setText("1000 - 1700");
         e11saturdayStartTextView.setText("1400- 2200");
 
-        e12Emp.setText("new");
+        e12Emp.setText("Brian B");
         e12sundayStartTextView.setText("1500 - 2200");
         e12mondayStartTextView.setText("0800 - 1300");
         e12tuesdayStartTextView.setText("0800 - 1300");
@@ -644,7 +644,7 @@ public class HomeScreen extends AppCompatActivity {
         e12fridayStartTextView.setText("1000 - 1700");
         e12saturdayStartTextView.setText("1400- 2200");
 
-        e13Emp.setText("new");
+        e13Emp.setText("t1");
         e13sundayStartTextView.setText("1500 - 2200");
         e13mondayStartTextView.setText("0800 - 1300");
         e13tuesdayStartTextView.setText("0800 - 1300");
@@ -653,7 +653,7 @@ public class HomeScreen extends AppCompatActivity {
         e13fridayStartTextView.setText("1000 - 1700");
         e13saturdayStartTextView.setText("1400- 2200");
 
-        e14Emp.setText("new");
+        e14Emp.setText("test");
         e14sundayStartTextView.setText("1500 - 2200");
         e14mondayStartTextView.setText("0800 - 1300");
         e14tuesdayStartTextView.setText("0800 - 1300");
@@ -662,7 +662,7 @@ public class HomeScreen extends AppCompatActivity {
         e14fridayStartTextView.setText("1000 - 1700");
         e14saturdayStartTextView.setText("1400- 2200");
 
-        e15Emp.setText("new");
+        e15Emp.setText("Ryan Kroll");
         e15sundayStartTextView.setText("1500 - 2200");
         e15mondayStartTextView.setText("0800 - 1300");
         e15tuesdayStartTextView.setText("0800 - 1300");
