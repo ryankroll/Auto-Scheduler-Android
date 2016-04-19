@@ -71,7 +71,8 @@ public class ViewEmployeeInfo extends AppCompatActivity {
         empNameTextView.setText((object.getString("name")));
         empEmailTextView.setText((object.getString("email")));
         String temp = String.valueOf(object.getNumber("phoneNumber"));
-        //String.format("(%s) %s-%s", temp.substring(0,3), temp.substring(3,6), temp.substring(6,10));
+        temp = String.format("(%s) %s-%s", temp.substring(0,3), temp.substring(3,6), temp
+                .substring(6,10));
         empPhoneNumberTextView.setText(temp);
         String dateString = mDate.parseDate(object.getDate("birthDate"), DATEFORMATS);
         empBirthdayTextView.setText(dateString);

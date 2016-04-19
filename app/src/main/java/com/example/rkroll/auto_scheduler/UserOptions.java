@@ -179,7 +179,8 @@ public class UserOptions extends AppCompatActivity {
         employeeName.setText(currentUser.getString("name"));
         empEmail.setText(currentUser.getString("email"));
         String temp = String.valueOf(currentUser.getNumber("phoneNumber"));
-       //String.format("(%s) %s-%s", temp.substring(0,3), temp.substring(3,6),temp.substring(6,10));
+        temp = String.format("(%s) %s-%s", temp.substring(0,3), temp.substring(3,6),temp
+                .substring(6,10));
         empPhoneNumber.setText(temp);
         String dateString = mDate.parseDate(currentUser.getDate("birthDate"), DATEFORMATS);
         empBirthday.setText(dateString);
