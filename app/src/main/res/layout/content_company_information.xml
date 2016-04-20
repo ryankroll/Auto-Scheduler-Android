@@ -81,16 +81,7 @@
 
             </LinearLayout>
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/editStoreInfo"
-                android:id="@+id/editStoreButton"
-                android:layout_gravity="end"
-                android:textSize="12sp"
-                android:onClick="editInfo"
-                />
+
 
             <LinearLayout
                 android:layout_width="wrap_content"

@@ -376,27 +376,27 @@ public class HomeScreen extends AppCompatActivity {
         //If general manager button is pressed from menu attempt to access general manager settings
         if (id == R.id.action_settings) {
 
-            //if (currentUser.getBoolean("isGeneralManager")) {
+            if (currentUser.getBoolean("isGeneralManager")) {
                 Intent intent = new Intent(this, GeneralManager.class);
                 startActivity(intent);
                 return true;
-            /*} else {
+            } else {
                 t.displayLongToast(getApplicationContext(), "You do not have permission to access" +
                         " this.");
-            }*/
+            }
         }
 
         // if manager settings button is pressed from menu attempt to access manager activities
         if (id == R.id.man_settings) {
 
-            //if (currentUser.getBoolean("isManager")) {
+            if (currentUser.getBoolean("isManager")) {
                 Intent intent = new Intent(this, ManagerOptions.class);
                 startActivity(intent);
                 return true;
-            /*} else {
+            } else {
                 t.displayLongToast(getApplicationContext(), "You do not have permission to access" +
                         " this.");
-            }*/
+            }
 
         }
 

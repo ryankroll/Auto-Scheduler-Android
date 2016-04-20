@@ -217,6 +217,9 @@ public class EditPersonalAvail extends AppCompatActivity {
                 public void done(ParseException e) {
                     if (e == null) {
                         Log.d("Object Save: ", "Success");
+                        toast toast = new toast();
+                        toast.displayLongToast(getApplicationContext(), "Availability request " +
+                                "saved");
                     } else {
                         Log.d("Exception", e.getMessage());
                     }
@@ -302,6 +305,9 @@ public class EditPersonalAvail extends AppCompatActivity {
                 public void done(ParseException e) {
                     if (e == null) {
                         Log.d("Object Save: ", "Success");
+                        toast toast = new toast();
+                        toast.displayLongToast(getApplicationContext(), "Availability request " +
+                                "saved");
                     } else {
                         Log.d("Exception", e.getMessage());
                     }
