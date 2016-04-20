@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -52,7 +53,13 @@ public class GeneralManager extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter<String>(this, R.layout.list_row, empList);
 
         empListView.setAdapter(arrayAdapter);
-
+        empListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String temp = arrayAdapter.getItem(position);
+                startViewEmployeeInfo(temp);
+            }
+        });
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
@@ -110,7 +117,7 @@ public class GeneralManager extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
 
-                    startViewEmployeeInfo();
+                    //startViewEmployeeInfo();
                 }
             };
 
@@ -199,9 +206,10 @@ public class GeneralManager extends AppCompatActivity {
 
 
 
-    private void startViewEmployeeInfo() {
+    private void startViewEmployeeInfo(String s) {
         // create an Intent to launch new activity to view specific employee
         Intent intent = new Intent(this, ViewEmployeeInfo.class);
+        intent.putExtra("EXTRA_NAME", s);
         startActivity(intent); // Go to Employee info screen
     }
 
